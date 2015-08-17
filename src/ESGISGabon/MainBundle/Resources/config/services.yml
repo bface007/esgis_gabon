@@ -1,0 +1,4 @@
+services:
+#    esgis_gabon_main.example:
+#        class: ESGISGabon\MainBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

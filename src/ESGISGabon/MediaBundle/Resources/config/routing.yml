@@ -1,0 +1,3 @@
+esgis_gabon_media_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: ESGISGabonMediaBundle:Default:index }

@@ -1,0 +1,4 @@
+services:
+#    esgis_gabon_media.example:
+#        class: ESGISGabon\MediaBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

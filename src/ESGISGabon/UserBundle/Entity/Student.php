@@ -1,0 +1,83 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: bface
+ * Date: 03/08/2015
+ * Time: 03:07
+ */
+
+namespace ESGISGabon\UserBundle\Entity;
+
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ */
+class Student extends User
+{
+
+    /**
+     * @var \DateTime
+     * @ORM\Column(type="date", name="registration_date", nullable=true)
+     */
+    private $registration_date;
+
+    /**
+     * @var \DateTime
+     * @ORM\Column(type="date", name="end_of_study_date", nullable=true)
+     */
+    private $end_of_study_date;
+
+
+    public function __construct()
+    {
+        // your own logic
+    }
+
+    /**
+     * Set registration_date
+     *
+     * @param \DateTime $registrationDate
+     * @return Student
+     */
+    public function setRegistrationDate($registrationDate)
+    {
+        $this->registration_date = $registrationDate;
+
+        return $this;
+    }
+
+    /**
+     * Get registration_date
+     *
+     * @return \DateTime 
+     */
+    public function getRegistrationDate()
+    {
+        return $this->registration_date;
+    }
+
+    /**
+     * Set end_of_study_date
+     *
+     * @param \DateTime $endOfStudyDate
+     * @return Student
+     */
+    public function setEndOfStudyDate($endOfStudyDate)
+    {
+        $this->end_of_study_date = $endOfStudyDate;
+
+        return $this;
+    }
+
+    /**
+     * Get end_of_study_date
+     *
+     * @return \DateTime 
+     */
+    public function getEndOfStudyDate()
+    {
+        return $this->end_of_study_date;
+    }
+}

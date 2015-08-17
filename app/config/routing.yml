@@ -1,0 +1,6 @@
+esgis_gabon_main:
+    resource: "@ESGISGabonMainBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
+

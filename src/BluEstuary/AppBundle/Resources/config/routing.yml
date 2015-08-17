@@ -1,0 +1,3 @@
+blu_estuary_app_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: BluEstuaryAppBundle:Default:index }

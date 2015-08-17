@@ -1,0 +1,3 @@
+esgis_gabon_post_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: ESGISGabonPostBundle:Default:index }
