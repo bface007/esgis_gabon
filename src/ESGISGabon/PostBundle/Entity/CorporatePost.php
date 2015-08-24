@@ -18,6 +18,12 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class CorporatePost extends Post
 {
+    /**
+     * @var
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
     private $id;
 
 
