@@ -24,5 +24,7 @@ class BluEstuaryPostExtension extends Extension
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
+
+        $container->setParameter('blu_es.post.entity.category.class', $config['model']['category_class']);
     }
 }

@@ -1,0 +1,591 @@
+#ent_login{
+    background-color: #343e80;
+    display: block;
+    min-width: 100%;
+}
+#ent {
+    background-color: #e9ecf3;
+    min-width: 100%;
+    min-height: 100%;
+}
+#ent .container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.esgis_ga_ent_login .esgis_ga_ent_logo_wrapper {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.esgis_ga_ent_logo_wrapper > .global {
+    display: inline-block;
+}
+.esgis_ga_ent_logo_wrapper > .global > span {
+    align-items: center;
+    color: #FFFFFF;
+}
+.esgis_ga_ent_logo_wrapper > .global > span > .logo_wrapper {
+    display: inline-block;
+    max-width: 60px;
+}
+.esgis_ga_ent_logo_wrapper > .global > span > .logo_meta {
+    text-align: left;
+}
+.esgis_ga_ent_logo_wrapper > .global > span > .logo_meta > .logo_title {
+    display: block;
+    padding: 2px 0;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #FFFFFF;
+}
+.esgis_ga_ent_login_form {
+    padding: 20px 20px 0 20px;
+    border-radius: 8px;
+}
+.esgis_ga_ent_login_form > .form-title {
+    color: #46bdb1;
+}
+.esgis_ga_ent_login_form > .back_to_esgis {
+    margin: 0 -20px;
+    padding: 15px 0;
+    background-color: #6c7a8d;
+}
+.esgis_ga_ent_sidebar,
+.page-logo {
+    width: 265px;
+}
+.esgis_ga_ent_navbar_top .page-logo {
+    height: 60px;
+    vertical-align: middle;
+
+}
+.esgis_ga_ent_navbar_top .page-top {
+    height: 60px;
+    flex: 1;
+    vertical-align: middle;
+}
+.page-logo img {
+    width: 50px;
+    height: auto;
+    margin: auto 0;
+}
+.page-logo a {
+    font-size: 1.2em;
+    line-height: 60px;
+}
+.page-logo a:hover {
+    text-decoration: none;
+}
+.page-logo img:hover {
+    opacity: inherit;
+}
+.page-logo > .menu-toggler {
+    float: right;
+    display: inline-block;
+    background-color: transparent;
+    position: relative;
+    transition: all 150ms linear;
+    outline: none;
+    padding: 4px;
+}
+.page-logo > .menu-toggler > i {
+    font-size: 30px;
+    margin-top: 11px;
+    transition: color 150ms linear;
+}
+.page-logo > .menu-toggler:hover > i {
+    color: #c0c0c0;
+}
+.page-top > .top-menu {
+    display: block;
+}
+.top-menu > ul {
+    display: inline-block;
+}
+.top-menu > ul > li {
+    display: inline-block;
+    height: 60px;
+    vertical-align: middle;
+    padding: 0;
+    float: left;
+}
+.top-menu > ul > li > a:hover {
+    background-color: #fffa97;
+    text-decoration: none;
+}
+.top-menu > ul > li.notif > a {
+    display: inline-block;
+    margin: 0;
+    padding: 18px 14px 13px 14px;
+    position: relative;
+}
+.top-menu > ul > li.notif > a:after {
+    content: attr(data-notif-number);
+
+    right: 0;
+    top: 0;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+
+    background-color: transparent;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.82em;
+    line-height: 24px;
+    margin-top: -14px;
+    color: #FFFFFF;
+    border: 0;
+}
+.top-menu > ul > li.notif.notif-alert > a:after {
+    background-color: #45B6AF;
+}
+.top-menu > ul > li.notif.notif-social > a:after {
+    background-color: #428bca;
+}
+.top-menu > ul > li.notif.notif-message > a:after {
+    background-color: #F3565D;
+}
+.top-menu > ul > li.dropdown-user > a {
+    padding: 11px 12px 11px 12px;
+    display: inline-block;
+}
+.top-menu > ul > li.dropdown-user .username {
+    display: inline-block;
+
+    color: #333;
+}
+.top-menu > ul > li.dropdown-user img {
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    margin-left: 4px;
+    background-color: #FFFFFF;
+    padding: 2px;
+}
+.esgis_ga_ent_navbar_top {
+    display: block;
+    width: 100%;
+    min-height: 40px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #e9ecf3;
+}
+.esgis_ga_ent_sidebar {
+    background-color: #FFFFFF;
+    min-height: 500px;
+    border-radius: 6px;
+}
+.esgis_ga_ent_sidebar > ul.unstyled {
+    margin-top: 15px;
+}
+.esgis_ga_ent_sidebar > ul.unstyled > li > a {
+    color: #333333;
+    padding: 12px 18px;
+    display: block;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 2px;
+    text-decoration: none;
+}
+.esgis_ga_ent_sidebar > ul.unstyled > li > a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -3px;
+    width: 3px;
+    height: 100%;
+    background-color: transparent;
+}
+.esgis_ga_ent_sidebar > ul.unstyled > li > a:hover,
+.esgis_ga_ent_sidebar > ul.unstyled > li.open > a,
+ul.sub-menu > li > a:hover {
+    text-decoration: none;
+    background-color: #fffa97;
+    color: #999;
+}
+.esgis_ga_ent_sidebar > ul.unstyled > li > a > i.material-icons {
+    position: relative;
+    top: 4px;
+    margin-right: 6px;
+    font-size: 22px;
+}
+.esgis_ga_ent_sidebar > ul.unstyled > li > a > i.icon-absolute {
+    position: absolute;
+    right: 6px;
+    top: 16px;
+}
+.esgis_ga_ent_sidebar > ul.unstyled > li.active > a {
+    background-color: #fffa97;
+    color: #ffd701;
+}
+.esgis_ga_ent_sidebar > ul.unstyled > li.active > a > i.material-icons {
+    color: #ffd701;
+}
+.esgis_ga_ent_sidebar > ul.unstyled > li.active > a:before {
+    background-color: #ffd701;
+}
+.esgis_ga_ent_content {
+    flex: 1;
+    padding-left: 20px;
+}
+.esgis_ga_ent_content > header {
+    padding: 20px 0;
+}
+.esgis_ga_ent_content > header > .page-title {
+    display: inline-block;
+    float: left;
+}
+.esgis_ga_ent_content > header > .page-title h1 {
+    margin: 0;
+    font-size: 1.4em;
+    color: #545454;
+}
+.esgis_ga_ent_content > header > .page-title h1 > small {
+    color: #999999;
+    font-size: 0.75em;
+}
+.esgis_ga_ent_content > header > .page-toolbar {
+    display: inline-block;
+    float: right;
+}
+.esgis_ga_ent_content > header > .page-toolbar > a {
+    color: #999999;
+    font-size: 16px;
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 4px;
+    transition: all 150ms ease-in;
+}
+.esgis_ga_ent_content > header > .page-toolbar > a:hover {
+    text-decoration: none;
+
+    color: #fffa97;
+}
+.esgis_ga_ent_content > header > .page-toolbar > a > i.material-icons {
+    font-size: 30px;
+}
+.esgis_ga_ent_content > header > .page-toolbar > a > span {
+    position: relative;
+    top: -10px;
+    line-height: 16px;
+    vertical-align: middle;
+}
+.dashboard-stat,
+.ent-panel {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    transition: all 200ms linear;
+}
+.dashboard-stat {
+    padding: 15px 12px;
+    border: 2px solid transparent;
+}
+.dashboard-stat:hover {
+    background-color: #e9ecf3;
+    border-color: #fffa97;
+}
+.dashboard-stat:hover > .display > .icon > i.material-icons,
+.dashboard-stat:hover > .display > .number > h3 {
+    color: #fffa97 !important;
+}
+.dashboard-stat:hover > .progress-info > .progress > .progress-bar {
+    background-color: #fffa97 !important;
+}
+.dashboard-stat > .display {
+    margin-bottom: 15px;
+}
+.dashboard-stat > .display > .number {
+    display: inline-block;
+    float: left;
+    max-width: 70%;
+}
+.dashboard-stat > .display > .number > h3 {
+    margin: 0 0 2px 0;
+    font-size: 30px;
+    font-family: "open_sansregular", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    transition: color 150ms ease-in;
+}
+.dashboard-stat > .display > .number > small {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #999999;
+}
+.dashboard-stat > .display > .icon {
+    display: inline-block;
+    float: right;
+}
+.dashboard-stat > .display > .icon > i.material-icons {
+    color: #e9ecf3;
+    font-size: 40px;
+}
+.dashboard-stat > .progress-info > .progress {
+    height: 4px;
+    margin-bottom: 6px;
+}
+.dashboard-stat > .progress-info > .status {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #999999;
+}
+.dashboard-stat > .progress-info > .status > .title {
+    display: inline-block;
+    float: left;
+    max-width: 75%;
+}
+.dashboard-stat > .progress-info > .status > .number {
+    display: inline-block;
+    float: right;
+}
+.ent-panel {
+    padding: 15px 12px 0 12px;
+}
+.ent-panel > header {
+    border: 0;
+    padding-bottom: 10px;
+}
+.ent-panel > header > .title,
+.ent-panel > header > .inputs,
+.ent-panel > header > .actions {
+    display: inline-block;
+}
+.ent-panel > header > .title {
+    float: left;
+    padding: 4px 0;
+}
+.ent-panel > header > .inputs,
+.ent-panel > header > .actions {
+    float: right;
+}
+.ent-panel > header > .title > h3 {
+    font-size: 20px;
+    line-height: 1;
+}
+.ent-panel > header.tiny {
+    padding-bottom: 4px;
+}
+.ent-panel > header.tiny > .actions {
+    top: -2px;
+}
+.ent-panel > header.tiny > .title > h3 {
+    font-size: 14px;
+}
+.ent-panel > header > .title > h3 > small {
+    font-size: 0.7em;
+    color: #999999;
+}
+.ent-panel > header > .actions {
+    margin-left: 4px;
+    position: relative;
+    top: 4px;
+}
+.ent-panel > header > .actions i {
+    color: #999;
+}
+.ent-panel > .content,
+.ent-panel > footer,
+.ent-panel > footer .max-h {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    border: 0;
+
+}
+.ent-panel > .content {
+    transition: all 150ms linear;
+}
+.ent-panel > footer {
+    transition: all 90ms linear;
+}
+
+.ent-panel.expanded > header {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eeeeee;
+}
+.ent-panel.expanded > .content,
+.ent-panel.expanded > footer .max-h {
+    max-height: 320px;
+    padding-bottom: 15px;
+}
+.ent-panel.expanded > .content.tabled {
+    max-height: 1000px;
+}
+
+
+.ent-panel.expanded > footer {
+    max-height: 600px;
+    padding-bottom: 10px;
+}
+.ent-panel.expanded > footer {
+    padding-top: 10px;
+    border-top: 1px dotted #eeeeee;
+}
+.general-items-list .item {
+    padding: 15px 15px 15px 0;
+}
+.general-items-list .item:not(:last-child) {
+    border-bottom: 1px solid #eeeeee;
+}
+.general-items-list .item-status,
+.general-items-list .item-details {
+    display: inline-block;
+}
+.general-items-list .item-details {
+    float: left;
+}
+.item-details {
+    font-size: 13px;
+}
+.item-details > .item-img {
+    height: 35px;
+    margin-right: 4px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.item-details > .item-name {
+    font-weight: 600;
+    font-size: 1em;
+    margin-right: 4px;
+}
+.item-details > .item-label {
+    color: #999;
+    font-size: 0.95em;
+}
+.general-items-list .item-status {
+    float: right;
+    color: #999999;
+    font-size: 13px;
+    vertical-align: middle;
+    position: relative;
+
+}
+.item-status > .badge {
+    margin: 0 2px 4px 0;
+}
+.general-items-list .item-content {
+    padding-top: 4px;
+}
+.general-items-list .item-content > p {
+    margin: 0;
+    color: #999999;
+}
+.columnCount .panels-section {
+    -moz-column-gap: 0;
+    -webkit-column-gap: 0;
+    column-gap: 0;
+}
+.columnCount .panels-section > .panel-wrapper {
+    display: inline-block !important;
+    width: 100%;
+    float: none !important;
+}
+ul.drafts-list > li.item {
+    padding: 10px 0;
+}
+ul.drafts-list > li.item time {
+    color: #999999;
+    font-size: 0.9em;
+}
+ul.sub-menu {
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 150ms linear;
+}
+.open ul.sub-menu {
+    max-height: 600px;
+    margin: 8px 0;
+    visibility: visible;
+}
+ul.sub-menu > li > a {
+    display: block;
+    padding: 9px 14px 9px 30px;
+}
+ul.sub-menu > li.active > a {
+    background-color: #fffa97;
+    color: #999999;
+    border-left: 4px solid #ffd701;
+    border-bottom: 1px solid #ffd701;
+    border-top: 1px solid #ffd701;
+}
+#ent-post {
+
+}
+#ent-post-title {
+    margin-bottom: 20px;
+}
+#ent-post-title > input {
+    font-size: 20px;
+    width: 100%;
+    padding: 10px 12px;
+    display: inline-block;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    outline: none;
+    transition: all 100ms linear;
+}
+#ent-post-title > input:focus {
+    border-color: #9ecfee;
+    -webkit-box-shadow: 1px 1px 4px #9ecfee;
+    -moz-box-shadow: 1px 1px 4px #9ecfee;
+    box-shadow: 1px 1px 4px #9ecfee;
+}
+.row-actions {
+    visibility: hidden;
+}
+.table tbody > tr:hover {
+    background: #eeeeee;
+}
+.table tbody > tr:hover .row-actions {
+    visibility: visible;
+}
+.row-actions > .action-buttons > a {
+    margin-right: 10px;
+    display: inline-block;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+.row-actions > .action-buttons > a:hover {
+    background: #CCCCCC;
+}
+.post-status {
+    color: #333333;
+    font-weight: bold;
+}
+@media (max-width: 768px){
+    .columnCount .panels-section {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+@media (min-width: 768px){
+    .columnCount .panels-section {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+@media (max-width: 992px) {
+    .ent_container {
+        margin-top: 20px;
+    }
+}
+@media (min-width: 992px) {
+    .esgis_ga_ent_navbar_top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        min-height: 40px;
+        z-index: 999;
+    }
+    .ent_container {
+        margin-top: 80px;
+    }
+}

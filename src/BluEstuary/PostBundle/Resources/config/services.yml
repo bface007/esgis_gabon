@@ -1,4 +1,25 @@
+parameters:
+    blu_es_post.tag_manager.class:      BluEstuary\PostBundle\Service\TagManager
+    blu_es_post.category_manager.class: BluEstuary\PostBundle\Service\CategoryManager
+
 services:
-#    blu_estuary_post.example:
-#        class: BluEstuary\PostBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
+
+    blu_es_post.tag_manager:
+        class:      %blu_es_post.tag_manager.class%
+        arguments:  ["@doctrine.orm.entity_manager", %fpn_tag.entity.tag.class%, %fpn_tag.entity.tagging.class%, "@fpn_tag.slugifier"]
+
+    blu_es_post.category_manager:
+        class:      %blu_es_post.category_manager.class%
+        arguments:  ["@doctrine.orm.entity_manager", %blu_es.post.entity.category.class%]
+
+    blu_es_post.form.tags:
+        class:      BluEstuary\PostBundle\Form\Type\TagType
+        arguments:  ["@blu_es_post.tag_manager"]
+        tags:
+            - { name: form.type, alias: tags}
+
+    blu_es_post.post.subscriber:
+        class:      BluEstuary\PostBundle\EventListener\PostSubscriber
+        arguments:  ["@service_container"]
+        tags:
+            - { name: doctrine.event_subscriber, connection: default }

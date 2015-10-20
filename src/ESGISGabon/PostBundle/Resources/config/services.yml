@@ -2,3 +2,9 @@ services:
 #    esgis_gabon_post.example:
 #        class: ESGISGabon\PostBundle\Example
 #        arguments: [@service_id, "plain_value", %parameter%]
+    prepersist.listener:
+        class:    ESGISGabon\PostBundle\Listener\PersistPost
+        arguments:
+            - @blu_es_core.string_helper
+        tags:
+            - { name: doctrine.event_listener, event: prePersist}

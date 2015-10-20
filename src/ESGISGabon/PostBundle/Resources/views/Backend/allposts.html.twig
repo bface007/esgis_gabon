@@ -1,0 +1,111 @@
+{% extends 'ESGISGabonMainBundle::backend_base.html.twig' %}
+
+{% block page_title %}
+    {{ parent() }}
+    <a href="{{ path('esgis_gabon_admin_add_post') }}" class="btn btn-x-sm rounded-4 ml-20 bg-golden">Ajouter un article</a>
+    <div class="clearfix min-h-40">
+        <div id="ent_spinner" class="spinner hide">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+{% endblock %}
+{% block page_content_toolbar %}
+
+
+{% endblock %}
+{% block page_content_container %}
+    <div class="col-md-12" id="ent_all_posts_content">
+        <section class="clearfix">
+            <ul class="unstyled inline-list" style="padding: 5px 0" id="subsubsub">
+
+            </ul>
+            <div class="inline-block input-lg input-icon rounded-input pull-right">
+                <i class="material-icons">search</i>
+                <input type="text" name="" id="post-search" class="form-control input-md" placeholder="Chercher dans les articles..."/>
+            </div>
+        </section>
+        <section>
+
+            <div class="ent-panel expanded mt-20 ">
+
+                <header class="clearfix hide">
+                    <label for="select-entries" class="pull-left text-left">
+                        Montrer
+                        <select name="" id="select-entries" class="form-control form-control-solid inline-block">
+                        </select>
+                        entrées
+                    </label>
+                </header>
+                <div class="content tabled" id="posts-table-wrapper">
+                    <p id="thereispost" class="alert">
+                        {% if posts_count is defined and posts_count == 0 %}
+                            Il n'y pas d'article pour l'instant
+                        {% endif %}
+
+                    </p>
+
+                    <table class="table hide" id="posts-table">
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" name="" id="" /></th>
+                                <th scope="col" class="column-20">Titre</th>
+                                <th scope="col" class="column-10">Auteur</th>
+                                <th scope="col" class="column-15">Catégories</th>
+                                <th scope="col" class="column-15">Mots-clés</th>
+                                <th scope="col" class="column-10 text-center"><i class="material-icons">comment</i></th>
+                                <th scope="col" class="column-10 text-center"><i class="material-icons">visibility</i></th>
+                                <th scope="col" class="column-10">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th><input type="checkbox" name="" id="" /></th>
+                                <th scope="col" class="column-20">Titre</th>
+                                <th scope="col" class="column-10">Auteur</th>
+                                <th scope="col" class="column-15">Catégories</th>
+                                <th scope="col" class="column-15">Mots-clés</th>
+                                <th scope="col" class="column-10 text-center"><i class="material-icons">comment</i></th>
+                                <th scope="col" class="column-10 text-center"><i class="material-icons">visibility</i></th>
+                                <th scope="col" class="column-10">Date</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <footer class="clearfix hide">
+                    <p class="pull-left inline-block" id="posts-table-info">
+                        Affiche les entrées 1 à <span class="select_entries"></span> sur {{ posts_count }} entrées
+                    </p>
+                    <ul class="pull-right pagination rounded-corner" id="posts-table-pagination">
+                        <!--
+                        <li class="disabled"><a href="#" title="first">≪</a></li>
+                        <li class="disabled"><a href="#" title="prev"><</a></li>
+                        <li class="active"><a href="#" title="current">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#" title="next">></a></li>
+                        <li><a href="#" title="last">≫</a></li>
+                        -->
+                    </ul>
+                </footer>
+            </div>
+        </section>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript">
+        var apiGetPosts = "{{ apiGetPostsUrl }}";
+        var baseApiGetPostsUrl = "{{ baseApiGetPostsUrl }}";
+        var basePost = "{{ path('esgis_gabon_admin_all_posts') }}";
+        var postsCount = {{ posts_count }};
+    </script>
+    {{ parent() }}
+{% endblock %}

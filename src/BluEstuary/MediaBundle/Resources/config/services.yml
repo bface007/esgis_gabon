@@ -2,3 +2,11 @@ services:
 #    blu_estuary_media.example:
 #        class: BluEstuary\MediaBundle\Example
 #        arguments: [@service_id, "plain_value", %parameter%]
+    blu_es_media.directory_namer:
+        class: BluEstuary\MediaBundle\Naming\DirectoryNamer
+
+    blu_es_media.media.subscriber:
+        class:     BluEstuary\MediaBundle\EventListener\MediaSubscriber
+        arguments: ["@service_container"]
+        tags:
+            - { name: doctrine.event_subscriber, connection: default}

@@ -9,6 +9,7 @@
 namespace ESGISGabon\MediaBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * Class Media
@@ -18,6 +19,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\InheritanceType("SINGLE_TABLE")
  * @ORM\DiscriminatorColumn(name="discr", type="string")
  * @ORM\DiscriminatorMap({ "image" = "Image", "media" = "Media"})
+ * @Vich\Uploadable
  */
 class Media extends CommonMedia
 {

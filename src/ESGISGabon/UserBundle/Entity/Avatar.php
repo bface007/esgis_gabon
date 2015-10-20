@@ -38,6 +38,13 @@ class Avatar extends Media
      */
     protected $imageDimensions = array();
 
+    /**
+     * @var \ESGISGabon\UserBundle\Entity\User
+     * @ORM\ManyToOne(targetEntity="ESGISGabon\UserBundle\Entity\User", inversedBy="avatars")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    protected $owner;
+
     public function __construct($width = null, $height = null)
     {
         parent::__construct();

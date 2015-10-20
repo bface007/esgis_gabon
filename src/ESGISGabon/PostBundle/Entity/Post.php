@@ -9,7 +9,9 @@
 namespace ESGISGabon\PostBundle\Entity;
 
 use BluEstuary\PostBundle\Model\Post as Base;
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraint as Assert;
 
 /**
  * Class Post
@@ -21,31 +23,31 @@ class Post extends Base
 
     /**
      * @var \DateTime
-     * @ORM\Column(type="date", name="creation_date", nullable=false)
+     * @ORM\Column(type="datetime", name="creation_date", nullable=false)
      */
     protected $creationDate;
 
     /**
      * @var \DateTime
-     * @ORM\Column(type="date", name="update_date", nullable=false)
+     * @ORM\Column(type="datetime", name="update_date", nullable=false)
      */
     protected $updateDate;
 
     /**
      * @var
-     * @ORM\Column(type="text", name="post_content", nullable=true)
+     * @ORM\Column(type="text", name="post_content", nullable=false)
      */
     protected $postContent;
 
     /**
      * @var string
-     * @ORM\Column(type="string", name="post_title", nullable=false, length=250)
+     * @ORM\Column(type="string", name="post_title", nullable=true, length=100)
      */
     protected $postTitle;
 
     /**
      * @var string
-     * @ORM\Column(type="string", name="post_excerpt", nullable=false, length=200)
+     * @ORM\Column(type="string", name="post_excerpt", nullable=true, length=200)
      */
     protected $postExcerpt;
 
@@ -53,13 +55,40 @@ class Post extends Base
      * @var string
      * @ORM\Column(type="string", name="post_status", nullable=false, length=20)
      */
-    protected $postStatus;
+    protected $postStatus = "draft";
 
     /**
      * @var string
-     * @ORM\Column(type="string", name="post_type", nullable=true, length=20)
+     * @ORM\ManyToOne(targetEntity="ESGISGabon\PostBundle\Entity\PostType")
+     * @ORM\JoinColumn(nullable=false)
      */
     protected $postType;
+
+    /**
+     * @var
+     * @ORM\Version
+     * @ORM\Column(type="integer")
+     */
+    protected $version;
+
+    /**
+     * @var int
+     * @ORM\Column(type="integer", name="views_counter")
+     */
+    protected $viewsCounter = 0;
+
+    /**
+     * @var \Doctrine\Common\Collections\ArrayCollection
+     * @ORM\ManyToMany(targetEntity="ESGISGabon\PostBundle\Entity\Category", cascade={"persist"})
+     */
+    protected $categories;
+
+    /**
+     * @var \Doctrine\Common\Collections\ArrayCollection
+     * @ORM\ManyToMany(targetEntity="ESGISGabon\PostBundle\Entity\Keyword", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=true)
+     */
+    protected $keywords;
 
     /**
      * @var OwnableInterface
@@ -68,10 +97,9 @@ class Post extends Base
      */
     protected $owner;
 
-    /**
-     * @var ModuleInterface
-     * @ORM\ManyToOne(targetEntity="ESGISGabon\MainBundle\Entity\Module")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    protected $module;
-} 
+    public function __construct()
+    {
+        $this->keywords = new ArrayCollection();
+        $this->categories = new ArrayCollection();
+    }
+}

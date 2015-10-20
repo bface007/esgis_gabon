@@ -11,10 +11,13 @@ framework:
         strict_requirements: ~
     form:            ~
     csrf_protection: ~
-    validation:      { enable_annotations: true }
+    validation:      { enabled: true, enable_annotations: true }
     templating:
         engines: ['twig']
         #assets_version: SomeVersionScheme
+        form:
+            resources:
+                - 'VichUploaderBundle:Form:fields.html.twig'
     default_locale:  "%locale%"
     trusted_proxies: ~
     session:         ~
@@ -58,7 +61,13 @@ doctrine:
 
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
-        auto_mapping: true
+        #auto_mapping: true
+        entity_managers:
+            default:
+                auto_mapping: true
+                dql:
+                    numeric_functions:
+                        is_null:    BluEstuary\CoreBundle\Doctrine\MySQL\IsNull
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -68,8 +77,87 @@ swiftmailer:
     password:  "%mailer_password%"
     spool:     { type: memory }
 
+# Stof\DoctrineExtension Conf
+stof_doctrine_extensions:
+    orm:
+        default:
+            sluggable: true
+            timestampable: true
+            tree: true
+
 # FOS User Configuration
 fos_user:
     db_driver: orm
     firewall_name: main
     user_class: ESGISGabon\UserBundle\Entity\User
+
+# FOS Rest Configuration
+fos_rest:
+    routing_loader:
+        default_format:     json
+    param_fetcher_listener: true
+    view:
+        view_response_listener: 'force'
+        templating_formats:
+            json: false
+
+#FPN Conf
+fpn_tag:
+    model:
+        tag_class:      ESGISGabon\PostBundle\Entity\Keyword
+        tagging_class:  ESGISGabon\PostBundle\Entity\KeywordTagging
+
+#BluEs Conf
+blu_estuary_post:
+    model:
+        category_class: ESGISGabon\PostBundle\Entity\Category
+
+#Knp Gaufrette Conf
+knp_gaufrette:
+    stream_wrapper: ~
+    adapters:
+        esgis_ga_adapter:
+            local:
+                directory: %kernel.root_dir%/../web/files
+    filesystems:
+        esgis_ga_filesystem:
+            adapter: esgis_ga_adapter
+
+#VichUploader
+vich_uploader:
+    db_driver: orm
+    storage:   gaufrette
+    mappings:
+        media_gallery:
+            uri_prefix:         /files
+            upload_destination: esgis_ga_filesystem
+            namer:              vich_uploader.namer_uniqid
+            directory_namer:    blu_es_media.directory_namer
+
+#Liip Imagine
+liip_imagine:
+    resolvers:
+        default:
+            web_path:
+                cache_prefix:   files/cache
+    filter_sets:
+        thumbnail:
+            quality: 80
+            filters:
+                thumbnail: { size: [50, 50], mode: outbound }
+        small:
+            quality: 85
+            filters:
+                thumbnail: { size: [150, 150], mode: outbound}
+        medium:
+            quality: 85
+            filters:
+                thumbnail: { size: [300, 300], mode: outbound}
+        large:
+            quality: 85
+            filters:
+                thumbnail: { size: [640, 640], mode: outbound}
+        full:
+            quality: 85
+            filters:
+                thumbnail: { size: [1280, 1280], mode: outbound}

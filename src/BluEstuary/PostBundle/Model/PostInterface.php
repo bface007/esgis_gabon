@@ -10,8 +10,9 @@ namespace BluEstuary\PostBundle\Model;
 
 
 use BluEstuary\CoreBundle\Model\CommonInterface;
+use BluEstuary\UserBundle\Model\OwnableInterface;
 
-interface PostInterface extends CommonInterface
+interface PostInterface extends OwnableInterface
 {
     /**
      * Sets post creation date
@@ -109,7 +110,7 @@ interface PostInterface extends CommonInterface
      * @param string $postType
      * @return self
      */
-    public function setPostType($postType);
+    public function setPostType(\BluEstuary\PostBundle\Model\PostType $postType);
 
     /**
      * Gets post type
@@ -118,5 +119,64 @@ interface PostInterface extends CommonInterface
      */
     public function getPostType();
 
+    /**
+     * Sets post slug
+     *
+     * @param string $slug
+     * @return self
+     */
+    public function setSlug($slug);
 
+    /**
+     * Gets post slug
+     * 
+     * @return string
+     */
+    public function getSlug();
+
+    /**
+     * Add post category
+     *
+     * @param CategoryInterface $category
+     * @return self
+     */
+    public function addCategory(\BluEstuary\PostBundle\Model\Category $category);
+
+    /**
+     * Remove post category
+     *
+     * @param CategoryInterface $category
+     * @return self
+     */
+    public function removeCategory(\BluEstuary\PostBundle\Model\Category $category);
+
+    /**
+     * Gets post categories
+     *
+     * @return \Doctrine\Common\Collections\ArrayCollection
+     */
+    public function getCategories();
+
+    /**
+     * Add post keyword
+     *
+     * @param KeywordInterface $keyword
+     * @return self
+     */
+    public function addKeyword(\BluEstuary\PostBundle\Model\Keyword $keyword);
+
+    /**
+     * Remove post keyword
+     *
+     * @param KeywordInterface $keyword
+     * @return self
+     */
+    public function removeKeyword(\BluEstuary\PostBundle\Model\Keyword $keyword);
+
+    /**
+     * Gets post keywords
+     *
+     * @return \Doctrine\Common\Collections\ArrayCollection
+     */
+    public function getKeywords();
 } 

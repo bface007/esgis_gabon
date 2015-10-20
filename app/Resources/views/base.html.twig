@@ -8,25 +8,42 @@
             <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         {% endblock %}
 
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}ESGIS Gabon{% endblock %}</title>
 
         {% block stylesheets %}
             <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}"/>
             <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}"/>
-            <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}"/>
+            <link rel="stylesheet" href="{{ asset('assets/css/site.css') }}">
         {% endblock %}
         {% block favicons %}
-            <link rel="icon" type="image/x-icon" href="{{ asset('assets/ico/favicon.ico') }}" />
+            <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('assets/ico/apple-touch-icon-57x57.png') }}">
+            <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('assets/ico/apple-touch-icon-60x60.png') }}">
+            <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('assets/ico/apple-touch-icon-72x72.png') }}">
+            <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/ico/apple-touch-icon-76x76.png') }}">
+            <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('assets/ico/apple-touch-icon-114x114.png') }}">
+            <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('assets/ico/apple-touch-icon-120x120.png') }}">
+            <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('assets/ico/apple-touch-icon-144x144.png') }}">
+            <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('assets/ico/apple-touch-icon-152x152.png') }}">
+            <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/ico/apple-touch-icon-180x180.png') }}">
+            <link rel="icon" type="image/png" href="{{ asset('assets/ico/favicon-32x32.png') }}" sizes="32x32">
+            <link rel="icon" type="image/png" href="{{ asset('assets/ico/favicon-194x194.png') }}" sizes="194x194">
+            <link rel="icon" type="image/png" href="{{ asset('assets/ico/favicon-96x96.png') }}" sizes="96x96">
+            <link rel="icon" type="image/png" href="{{ asset('assets/ico/android-chrome-192x192.png') }}" sizes="192x192">
+            <link rel="icon" type="image/png" href="{{ asset('assets/ico/favicon-16x16.png') }}" sizes="16x16">
+            <link rel="manifest" href="{{ asset('assets/ico/manifest.json') }}">
+            <meta name="msapplication-TileColor" content="#ffc40d">
+            <meta name="msapplication-TileImage" content="{{ asset('assets/ico/mstile-144x144.png') }}">
+            <meta name="theme-color" content="#edef17">
         {% endblock %}
 
+        {% block header_extra %}{% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}
+
         {% block javascripts %}
             <script src="{{ asset('assets/js/libs/moment.min.js') }}"></script>
             <script src="{{ asset('assets/js/libs/jquery-1.11.2.min.js') }}"></script>
-            <script src="{{ asset('assets/js/libs/bootstrap.min.js') }}"></script>
-            <script src="{{ asset('assets/js/app.js') }}"></script>
         {% endblock %}
     </body>
 </html>

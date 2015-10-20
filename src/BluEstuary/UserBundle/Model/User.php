@@ -40,6 +40,11 @@ abstract class User extends BaseUser
     /**
      * @var string
      */
+    protected $displayname;
+
+    /**
+     * @var string
+     */
     protected $address;
 
     /**
@@ -138,6 +143,28 @@ abstract class User extends BaseUser
         return $this->placeofbirth;
     }
 
+    /**
+     * Sets user's display name
+     *
+     * @param string $displayname
+     * @return self
+     */
+    public function setDisplayName($displayname)
+    {
+        $this->displayname = $displayname;
+
+        return $this;
+    }
+
+    /**
+     * Gets user's display name
+     *
+     * @return string
+     */
+    public function getDisplayName()
+    {
+        return $this->displayname;
+    }
     /**
      * Sets user address
      *

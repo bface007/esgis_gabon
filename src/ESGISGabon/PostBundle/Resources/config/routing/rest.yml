@@ -1,0 +1,4 @@
+posts:
+    type:        rest
+    resource:    "@ESGISGabonPostBundle/Controller/PostRestController.php"
+    name_prefix: api_

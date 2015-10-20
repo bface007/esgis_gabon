@@ -10,7 +10,7 @@ namespace BluEstuary\UserBundle\Model;
 
 
 use BluEstuary\CoreBundle\Model\CommonInterface;
-use Symfony\Component\Security\Core\User\UserInterface;
+use FOS\UserBundle\Model\UserInterface;
 
 interface OwnableInterface extends CommonInterface
 {

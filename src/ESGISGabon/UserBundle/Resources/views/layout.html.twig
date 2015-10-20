@@ -1,0 +1,57 @@
+{% extends "::base.html.twig" %}
+
+{% block seo %}
+    {{ parent() }}
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('assets/css/materialicons.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/libs/tagsinput/bootstrap-tagsinput.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/ent.css') }}">
+
+{% endblock %}
+
+{% block header_extra %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('assets/js/support.detector.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    <header class="esgis_ga_ent_logo_wrapper bg-transparent">
+        <div class="global">
+        <span class="flexbox">
+            <span class="logo_wrapper">
+                <img src="{{ asset('assets/img/new_logo_esgis.png') }}" alt="New Logo ESGIS Gabon" class="img-responsive"/>
+            </span>
+            <span class="logo_meta">
+                <span class="logo_title clearfix">ESGIS Gabon</span>
+                <span class="logo_subtitle">
+                    <b class="text-golden">E</b>space <b class="text-red">N</b>umérique de <b class="text-blue">T</b>ravail
+                </span>
+            </span>
+        </span>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-md-offset-4 col-md-4 bg-transparent">
+                    {% block user_form %}{% endblock %}
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('assets/js/libs/jquery.slimscroll.min.js') }}"></script>
+    <script src="{{ asset('assets/js/libs/bootstrap-tagsinput.min.js') }}"></script>
+    <script type="text/javascript">
+        $('body').attr('id', 'ent_login').addClass('esgis_ga_ent_login');
+    </script>
+    <script type="text/javascript" src="{{ asset('assets/js/custom.js') }}"></script>
+{% endblock %}
+

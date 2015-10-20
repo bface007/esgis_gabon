@@ -1,0 +1,89 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: bface007
+ * Date: 25/09/15
+ * Time: 02:51
+ */
+
+namespace ESGISGabon\PostBundle\Fixtures\ORM;
+
+
+use Doctrine\Common\DataFixtures\FixtureInterface;
+use Doctrine\Common\Persistence\ObjectManager;
+use ESGISGabon\PostBundle\Entity\CorporatePost;
+use ESGISGabon\PostBundle\Entity\Category;
+use ESGISGabon\PostBundle\Entity\Keyword;
+use Symfony\Component\DependencyInjection\ContainerAwareInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+
+
+class Posts implements FixtureInterface, ContainerAwareInterface
+{
+    private $container;
+    /**
+     * Load data fixtures with the passed EntityManager
+     *
+     * @param ObjectManager $manager
+     */
+    public function load(ObjectManager $manager)
+    {
+        $categories = array("Non Classe", "Sport", "Etudes");
+        $keywords = array("test", "fixtures", "yep");
+        $posts = array(
+            array(
+                "title" => "This is a test",
+                "content" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum turpis vel nulla eleifend tincidunt sed a felis. Nunc efficitur, sapien fermentum dictum iaculis, nunc dolor iaculis erat, vulputate varius eros quam id quam. Nullam et varius enim. Etiam laoreet semper dolor ut sagittis. Proin imperdiet commodo mauris. Nullam blandit urna in commodo porta. Nulla maximus est sit amet sollicitudin aliquam. Etiam ut nisl vestibulum, euismod ipsum sed, placerat ante. Etiam at accumsan eros."
+            ),
+            array(
+                "title" => "This is a test 2",
+                "content" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum turpis vel nulla eleifend tincidunt sed a felis. Nunc efficitur, sapien fermentum dictum iaculis, nunc dolor iaculis erat, vulputate varius eros quam id quam. Nullam et varius enim. Etiam laoreet semper dolor ut sagittis. Proin imperdiet commodo mauris. Nullam blandit urna in commodo porta. Nulla maximus est sit amet sollicitudin aliquam. Etiam ut nisl vestibulum, euismod ipsum sed, placerat ante. Etiam at accumsan eros."
+            )
+        );
+        $userManager = $this->container->get('fos_user.user_manager');
+        $user = $userManager->findUserBy(array("id" => 3));
+        $new_posts = array();
+
+        foreach($posts as $i => $post){
+            $new_posts[$i] = new CorporatePost();
+            $new_posts[$i]->setPostTitle($post["title"])
+                ->setPostContent($post["content"]);
+        }
+        foreach($categories as $ii => $cat){
+            $new_cat = new Category();
+            $new_cat->setTitle($cat);
+
+            foreach($posts as $i => $post){
+                $new_posts[$i]->addCategory($new_cat);
+            }
+        }
+        foreach($keywords as $ii => $key){
+            $new_key = new Keyword();
+            $new_key->setTitle($key);
+
+            foreach($posts as $i => $post){
+                $new_posts[$i]->addKeyword($new_key);
+            }
+        }
+
+        foreach($posts as $i => $post){
+            $new_posts[$i]->setOwner($user);
+            $manager->persist($new_posts[$i]);
+        }
+
+        $manager->flush();
+
+    }
+
+    /**
+     * Sets the Container.
+     *
+     * @param ContainerInterface|null $container A ContainerInterface instance or null
+     *
+     * @api
+     */
+    public function setContainer(ContainerInterface $container = null)
+    {
+        $this->container = $container;
+    }
+}

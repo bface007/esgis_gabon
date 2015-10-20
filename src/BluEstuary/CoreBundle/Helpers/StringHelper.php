@@ -25,7 +25,8 @@ class StringHelper {
      * @param null|string $content
      */
     public function __contruct($content = null){
-        $this->setContent($content);
+        $this->content = $content;
+        $this->originalContent = $content;
     }
 
     /**
@@ -35,7 +36,8 @@ class StringHelper {
     public function setContent($content){
         if(null !== $content && false === is_string($content))
             trigger_error("class constructor expected Argument 1 to be a string", E_USER_ERROR);
-        $this->originalContent = $this->content = $content;
+        $this->originalContent = $content;
+        $this->content = $content;
 
         return $this;
     }
@@ -76,7 +78,7 @@ class StringHelper {
     public function excerptContent($startPos = 0, $maxLength = 100, $excerptText = "..."){
         $this->content = $this->makeExcerpt($this->content, $startPos, $maxLength, $excerptText);
 
-        return $this;
+        return $this->content;
     }
 
     /**

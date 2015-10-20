@@ -1,0 +1,132 @@
+{% extends 'ESGISGabonMainBundle::backend_base.html.twig' %}
+
+{% block page_title %}
+ {{ parent() }}
+{% endblock %}
+
+{% block page_content_toolbar %}
+
+
+{% endblock %}
+
+{% block page_content_container %}
+    <form action="{{ path('esgis_gabon_admin_add_post') }}" method="post" {{ form_enctype(form) }}>
+        <div class="col-md-9">
+            <div id="ent-post">
+                {# Les erreurs générales du formulaire. #}
+                {{ form_errors(form) }}
+                <div id="ent-post-title">
+                    {{ form_widget(form.postTitle, {'attr': {'placeholder': 'Saisissez votre titre ici'}}) }}
+                </div>
+                <div id="ent-post-wysiwyg">
+                    {{ form_widget(form.postContent, {'attr': {'id': 'wysiwyg', 'class': 'form-control'}}) }}
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="col-md-3">
+            <div class="ent-panel expanded" id="publish-panel">
+                <header class="clearfix tiny">
+                    <div class="title tiny-title">
+                        <h3 class="no-margin">Publier</h3>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="panel-action-button" data-action="expand" onclick="return false">
+                            <i class="material-icons">expand_more</i>
+                        </a>
+                    </div>
+                </header>
+                <div class="content" id="ent-post-status">
+                    <div class="form-group">
+                        {{ form_label(form.postType, 'Etat') }}
+                        {{ form_widget(form.postStatus, {'attr': {'class': 'form-control rounded-2'}}) }}
+                    </div>
+                </div>
+                <footer class="clearfix">
+                    <button class="btn btn-sm rounded-2 block" id="publish-button" type="submit">Enregistrer le brouillon</button>
+                </footer>
+            </div>
+            <div class="ent-panel expanded" id="post-type-panel">
+                <header class="clearfix tiny">
+                    <div class="title tiny-title">
+                        <h3 class="no-margin">Format</h3>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="panel-action-button" data-action="expand" onclick="return false">
+                            <i class="material-icons">expand_more</i>
+                        </a>
+                    </div>
+                </header>
+                <div class="content" id="ent-post-type">
+                    {% set postType_id = form.postType.vars.id %}
+                    {% set postType_fullName = form.postType.vars.full_name %}
+                    <ul class="unstyled" id="{{ postType_id }}" rel="{{ postType_fullName }}">
+                        {% for choice in form.postType %}
+                            <li>
+                                <label for="{{ postType_id }}_{{ loop.index }}" class="form-control">
+                                    {{ form_widget(choice) }}
+                                    {{ choice.vars.label }}
+                                </label>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="ent-panel expanded" id="post-categories-panel">
+                <header class="clearfix tiny">
+                    <div class="title tiny-title">
+                        <h3 class="no-margin">Catégories</h3>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="panel-action-button" data-action="expand" onclick="return false">
+                            <i class="material-icons">expand_more</i>
+                        </a>
+                    </div>
+                </header>
+                <div class="content" id="ent-post-categories">
+                    {% set categories_id = form.categories.vars.id %}
+                    {% set categories_fullName = form.categories.vars.full_name %}
+                    <ul class="unstyled" id="{{ categories_id }}" rel="{{ categories_fullName }}">
+                        {% for choice in form.categories %}
+                            <li>
+                                <label for="{{ categories_id }}_{{ choice.vars.value }}" class="form-control">
+                                    {{ form_widget(choice) }}
+                                    {{ choice.vars.label }}
+                                </label>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="ent-panel expanded" id="post-keywords-panel">
+                <header class="clearfix tiny">
+                    <div class="title tiny-title">
+                        <h3 class="no-margin">Mots-clés</h3>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="panel-action-button" data-action="expand" onclick="return false">
+                            <i class="material-icons">expand_more</i>
+                        </a>
+                    </div>
+                </header>
+                <div class="content" id="ent-post-keywords">
+                    <div class="form-group">
+                        {{ form_widget(form.keywords, {'attr': {'class': 'form-control', 'data-role': 'tagsinput'}}) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{ form_rest(form) }}
+    </form>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript">
+        var apiGetPosts = "{{ path('api_get_posts') }}";
+        var basePost = "{{ path('esgis_gabon_admin_all_posts') }}"
+    </script>
+    {{ parent() }}
+{% endblock %}

@@ -1,0 +1,25 @@
+esgis_gabon_admin_all_posts:
+    path:        /
+    defaults:    { _controller: ESGISGabonPostBundle:Backend:index }
+
+esgis_gabon_admin_add_post:
+    path:        /add
+    defaults:    { _controller: ESGISGabonPostBundle:Backend:addPost }
+
+esgis_gabon_admin_show_post:
+    path:        /show/{id}
+    defaults:    { _controller: ESGISGabonPostBundle:Backend:showPost }
+    requirements:
+        id:      \d+
+
+esgis_gabon_admin_edit_post:
+    path:        /edit/{id}
+    defaults:    { _controller: ESGISGabonPostBundle:Backend:editPost }
+    requirements:
+        id:      \d+
+
+esgis_gabon_admin_remove_post:
+    path:        /remove/{id}
+    defaults:    { _controller: ESGISGabonPostBundle:Backend:removePost }
+    requirements:
+        id:      \d+

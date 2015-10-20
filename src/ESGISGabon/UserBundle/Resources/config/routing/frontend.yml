@@ -1,0 +1,3 @@
+esgis_gabon_user_login:
+    path:      /login
+    defaults:  { _controller: ESGISGabonUserBundle:Security:login }

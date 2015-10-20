@@ -9,15 +9,16 @@
 namespace BluEstuary\MediaBundle\Model;
 
 
-use BluEstuary\UserBundle\Model\OwnableInterface;
-use Symfony\Component\Security\Core\User\UserInterface;
+use BluEstuary\UserBundle\Model\User;
+use FOS\UserBundle\Model\UserInterface;
+use Symfony\Component\HttpFoundation\File\File;
 
 /**
  * Class Media
  * @package BluEstuary\MediaBundle\Model
  *
  */
-abstract class Media implements MediaInterface, OwnableInterface
+abstract class Media implements MediaInterface
 {
     protected $id;
 
@@ -30,6 +31,11 @@ abstract class Media implements MediaInterface, OwnableInterface
      * @var string
      */
     protected $fileName;
+
+    /**
+     * @var File
+     */
+    protected $file;
 
     /**
      * @var string
@@ -312,6 +318,25 @@ abstract class Media implements MediaInterface, OwnableInterface
     public function getLocation()
     {
         return $this->location;
+    }
+
+    /**
+     * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile|null $file
+     * @return $this
+     */
+    public function setFile(File $file = null)
+    {
+        $this->file = $file;
+
+        return $this;
+    }
+
+    /**
+     * @return File
+     */
+    public function getFile()
+    {
+        return $this->file;
     }
 
     /**

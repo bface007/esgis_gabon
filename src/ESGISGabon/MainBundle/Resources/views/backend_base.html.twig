@@ -1,0 +1,108 @@
+{% extends "::base.html.twig" %}
+
+{% block seo %}
+{{ parent() }}
+{% endblock %}
+
+{% block title %}{{ page_title }} ‹ Administration ‹ {{ parent() }}{% endblock %}
+
+{% block stylesheets %}
+{{ parent() }}
+    <link rel="stylesheet" href="{{ asset('assets/css/materialicons.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/libs/tagsinput/bootstrap-tagsinput.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/ent.css') }}">
+
+{% endblock %}
+
+{% block header_extra %}
+{{ parent() }}
+    <script type="text/javascript" src="{{ asset('assets/js/support.detector.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    <header class="esgis_ga_ent_navbar_top">
+        <div class="container-fluid flexbox">
+            <div class="page-logo">
+                <a href="#" title="page title">
+                    <img src="{{ asset('assets/img/esgis_new_logo_golden.png') }}" alt="page title">
+                    <b class="text-golden">E</b>.<b class="text-red">N</b>.<b class="text-blue">T</b>
+                </a>
+                <button class="menu-toggler sidebar-toggler no-border">
+                    <i class="material-icons md-dark">menu</i>
+                </button>
+            </div>
+            <div class="page-top">
+                <div class="top-menu">
+                    <ul class="unstyled pull-right">
+                        <li class="notif notif-alert">
+                            <a href="javascript:;" data-notif-number="99+">
+                                <i class="material-icons md-dark">notifications</i>
+                            </a>
+                        </li>
+                        <li class="notif notif-message">
+                            <a href="javascript:;" data-notif-number="5">
+                                <i class="material-icons md-dark">message</i>
+                            </a>
+                        </li>
+                        <li class="notif notif-social">
+                            <a href="javascript:;" data-notif-number="8">
+                                <i class="material-icons md-dark">public</i>
+                            </a>
+                        </li>
+                        <li class="dropdown-user">
+                            <a href="javascript:;">
+                                <span class="username">Bface007</span>
+                                <img src="{{ asset('assets/img/227722_222516587774142_4561698_a.jpg') }}" alt="Bface007" class="img-responsive img-circle">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="ent_container">
+        <div class="container-fluid flexbox">
+            <aside class="esgis_ga_ent_sidebar">
+                <!-- ENT SIDEBAR -->
+                {{ knp_menu_render('ESGISGabonMainBundle:Builder:adminMainMenu', {'currentClass': 'active','ancestorClass': 'active open', 'template': 'ESGISGabonMainBundle:Menu:knp_menu.html.twig'}) }}
+                <!-- /ENT SIDEBAR -->
+            </aside>
+            <div class="esgis_ga_ent_content">
+                <header class="clearfix">
+                    <div class="page-title">
+                        <h1>
+                            {% block page_title %}
+                            {{ page_title }}
+                            {% if posts_count is defined %}
+                            ({{ posts_count }})
+                            {% endif %}
+                            {% if page_subtitle is defined %}
+                            <small>{{ page_subtitle }}</small>
+                            {% endif %}
+                            {% endblock %}
+                        </h1>
+                    </div>
+                    <div class="page-toolbar">
+                        {% block page_content_toolbar %}{% endblock %}
+                    </div>
+                </header>
+                <div class="row">
+                    {% block page_content_container %}{% endblock %}
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    {% include "ESGISGabonMainBundle:Includes:footer.html.twig" %}
+    <!-- /Footer -->
+{% endblock %}
+
+{% block javascripts %}
+{{ parent() }}
+    <script type="text/javascript" src="{{ asset('assets/js/libs/jquery.slimscroll.min.js') }}"></script>
+    <script src="{{ asset('assets/js/libs/bootstrap-tagsinput.min.js') }}"></script>
+    <script type="text/javascript">
+        $('body').attr('id', 'ent');
+    </script>
+    <script type="text/javascript" src="{{ asset('assets/js/custom.js') }}"></script>
+{% endblock %}

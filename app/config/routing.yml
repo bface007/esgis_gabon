@@ -1,6 +1,28 @@
 esgis_gabon_main:
-    resource: "@ESGISGabonMainBundle/Resources/config/routing.yml"
+    resource: "@ESGISGabonMainBundle/Resources/config/routing/frontend.yml"
     prefix:   /
 
+esgis_gabon_admin:
+    resource: "@ESGISGabonMainBundle/Resources/config/routing/backend.yml"
+    prefix:   /dashboard
+
+esgis_gabon_admin_posts:
+    resource: "@ESGISGabonPostBundle/Resources/config/routing/backend.yml"
+    prefix:   /dashboard/posts
+
+esgis_gabon_user_security:
+    resource: "@ESGISGabonUserBundle/Resources/config/routing/frontend.yml"
+
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+
+_liip_imagine:
+    resource: "@LiipImagineBundle/Resources/config/routing.xml"
+
+#REST
+rest:
+    type:     rest
+    resource: "routing_rest.yml"
+    prefix:   /api
 
 

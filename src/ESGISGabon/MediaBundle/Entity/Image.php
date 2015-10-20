@@ -10,11 +10,14 @@ namespace ESGISGabon\MediaBundle\Entity;
 
 use BluEstuary\MediaBundle\Model\ImageInterface;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * Class Image
  * @package ESGISGabon\PostBundle\Entity
  * @ORM\Entity
+ * @Vich\Uploadable
  */
 class Image extends Media implements ImageInterface
 {
@@ -30,6 +33,17 @@ class Image extends Media implements ImageInterface
      * @ORM\Column(type="simple_array", name="image_dimensions")
      */
     protected $imageDimensions = array();
+
+    /**
+     * NOTE: This is not a mapped field of entity metadata, just a simple property.
+     *
+     * @var File
+     * @Assert\Image(
+        maxSize="5M"
+     * )
+     * @Vich\UploadableField(mapping="media_gallery", fileNameProperty="fileName")
+     */
+    protected $file;
 
     /**
      * Sets image status ("default" or "cropped")

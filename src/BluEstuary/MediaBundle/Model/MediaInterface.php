@@ -8,9 +8,12 @@
 namespace BluEstuary\MediaBundle\Model;
 
 use BluEstuary\CoreBundle\Model\CommonInterface;
+use BluEstuary\UserBundle\Model\OwnableInterface;
 use BluEstuary\UserBundle\Model\User;
+use FOS\UserBundle\Model\UserInterface;
+use Symfony\Component\HttpFoundation\File\File;
 
-interface MediaInterface extends CommonInterface
+interface MediaInterface extends CommonInterface, OwnableInterface
 {
     /**
      * Sets the file location
@@ -154,4 +157,25 @@ interface MediaInterface extends CommonInterface
      */
     public function getFileUrl();
 
+    /**
+     * @param File|null $file
+     * @return self
+     */
+    public function setFile(File $file = null);
+
+    /**
+     * @return File|null
+     */
+    public function getFile();
+
+    /**
+     * @param UserInterface|null $user
+     * @return self
+     */
+    public function setOwner(UserInterface $user);
+
+    /**
+     * @return UserInterface|null
+     */
+    public function getOwner();
 }

@@ -1,0 +1,33 @@
+{% extends "ESGISGabonUserBundle::layout.html.twig" %}
+
+{% block user_form %}
+    <form action="{{ path("fos_user_security_check") }}" method="post" class="esgis_ga_ent_login_form bg-grey mt-20">
+        <h3 class="form-title text-center text-up">Connectez-vous</h3>
+        {% if error %}
+            <div class="alert warning">
+                {{ error.messageKey|trans(error.messageData, 'security') }}
+            </div>
+        {% endif %}
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+        <div class="form-group">
+            <label for="username" class="visible-ie8 visible-ie9">Identifiant</label>
+            <input type="text" name="_username" id="username" placeholder="Identifiant" class="form-control" value="{{ last_username }}" required/>
+        </div>
+        <div class="form-group">
+            <label for="password">Mot de passe</label>
+            <input type="password" name="_password" id="password" placeholder="Mot de passe" class="form-control" required/>
+        </div>
+        <div class="form-group">
+            <label for="remember_me">
+                <input type="checkbox" id="remember_me" name="_remember_me" value="on" /> Se souvenir de moi
+            </label>
+        </div>
+        <div class="form-actions">
+            <button class="btn bg-blue text-up block" type="submit" name="_submit">Se connecter</button>
+            <p class="text-center"><a href="#">Première connexion ou mot de passe oublié ?</a></p>
+        </div>
+        <div class="back_to_esgis">
+            <p class="text-center no-margin text-up"><a href="../index.html" class="text-white">Retour sur la page d'accueil</a></p>
+        </div>
+    </form>
+{% endblock %}
