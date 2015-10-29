@@ -24,6 +24,7 @@ esgis_gabon_admin_remove_post:
     requirements:
         id:      \d+
 
+# categories route
 esgis_gabon_admin_categories:
     path:        /categories
     defaults:    { _controller: ESGISGabonPostBundle:Backend:categories }
@@ -43,3 +44,24 @@ esgis_gabon_admin_load_categories:
 esgis_gabon_admin_delete_categories:
     path:        /categories/delete
     defaults:    { _controller: ESGISGabonPostBundle:Backend:deleteCategory }
+
+# keywords route
+esgis_gabon_admin_keywords:
+    path:        /keywords
+    defaults:    { _controller: ESGISGabonPostBundle:Backend:keywords }
+
+esgis_gabon_admin_edit_keyword:
+    path:        /keywords/edit/{id}
+    defaults:    { _controller: ESGISGabonPostBundle:Backend:editKeyword }
+    requirements:
+        id:      \d+
+
+esgis_gabon_admin_load_keywords:
+    path:        /keywords/load
+    defaults:    { _controller: ESGISGabonPostBundle:Backend:loadKeywords }
+    requirements:
+        _method: GET
+
+esgis_gabon_admin_delete_keywords:
+    path:        /keywords/delete
+    defaults:    { _controller: ESGISGabonPostBundle:Backend:deleteKeyword }

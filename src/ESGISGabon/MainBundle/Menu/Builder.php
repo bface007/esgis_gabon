@@ -109,6 +109,7 @@ class Builder extends ContainerAware
             $menu['Articles']->addChild('Tous les articles', array('route' => 'esgis_gabon_admin_all_posts'));
             $menu['Articles']->addChild('Ajouter', array('route' => 'esgis_gabon_admin_add_post'));
             $menu['Articles']->addChild('Catégories', array('route' => 'esgis_gabon_admin_categories'));
+            $menu['Articles']->addChild('Mots-clés', array('route' => 'esgis_gabon_admin_keywords'));
 
             switch($request->get('_route'))
             {
@@ -117,6 +118,9 @@ class Builder extends ContainerAware
                     break;
                 case 'esgis_gabon_admin_edit_category':
                     $menu['Articles']['Catégories']->setCurrent(true);
+                    break;
+                case 'esgis_gabon_admin_edit_keyword':
+                    $menu['Articles']['Mots-clés']->setCurrent(true);
                     break;
             }
         }

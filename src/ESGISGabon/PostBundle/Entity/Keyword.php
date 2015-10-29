@@ -11,12 +11,18 @@ namespace ESGISGabon\PostBundle\Entity;
 use BluEstuary\PostBundle\Model\Keyword as Base;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+
 
 /**
  * Class Keyword
  * @package ESGISGabon\PostBundle\Entity
  * @ORM\Entity(repositoryClass="ESGISGabon\PostBundle\Entity\KeywordRepository")
  * @ORM\Table(name="esgis_post_keywords")
+ * @UniqueEntity(
+ *      fields={"name"},
+ *      message="Un mot-clé avec ce nom existe déjà."
+ * )
  */
 class Keyword extends Base
 {
@@ -27,6 +33,12 @@ class Keyword extends Base
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
+
+    /**
+     * @var string
+     * @ORM\Column(length=255, name="keyword_desc", nullable=true, type="string")
+     */
+    protected $desc;
 
     /**
      * @var int
@@ -42,7 +54,7 @@ class Keyword extends Base
 
     public function __construct($name = null)
     {
-        $this->name = $name;
+        parent::__construct($name);
     }
 
     public function getId(){

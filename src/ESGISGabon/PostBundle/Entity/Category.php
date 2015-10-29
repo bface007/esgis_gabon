@@ -11,6 +11,7 @@ namespace ESGISGabon\PostBundle\Entity;
 use BluEstuary\PostBundle\Model\Category as Base;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * Class Category
@@ -18,6 +19,10 @@ use Gedmo\Mapping\Annotation as Gedmo;
  * @Gedmo\Tree(type="nested")
  * @ORM\Entity(repositoryClass="ESGISGabon\PostBundle\Entity\CategoryRepository")
  * @ORM\Table(name="esgis_post_categories")
+ * @UniqueEntity(
+ *      fields={"name"},
+ *      message="Une catégorie avec ce nom existe déjà."
+ * )
  */
 class Category extends Base
 {
@@ -31,7 +36,7 @@ class Category extends Base
 
     /**
      * @var string
-     * @ORM\Column(type="string", name="category_name", nullable=false, length=30)
+     * @ORM\Column(type="string", name="category_name", nullable=false, length=30, unique=true)
      */
     protected $name;
 

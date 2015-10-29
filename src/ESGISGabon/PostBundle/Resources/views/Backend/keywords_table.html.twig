@@ -1,0 +1,39 @@
+
+<table class="table" id="ent-keywords-table">
+    <thead>
+    <tr>
+        <th class="checkbox check-column" rel="all" ><input type="checkbox" id="" data-check="all"></th>
+        <th scope="col">Nom</th>
+        <th scope="col">Description</th>
+        <th scope="col">Identifiant</th>
+        <th scope="col">Compteur</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for keyword in keywords %}
+
+        <tr id="keyword_{{ keyword.id }}" class="keyword_item">
+            <td class="checkbox">
+                <input type="checkbox" id="checkbox_keyword_{{ keyword.id }}" data-check="single" data-check-value="{{ keyword.id }}">
+            </td>
+            <td><a href="{{ path('esgis_gabon_admin_edit_keyword', {'id': keyword.id}) }}">{{ keyword.name }}</a></td>
+            <td>{{ keyword.desc }}</td>
+            <td>{{ keyword.slug }}</td>
+            <td class="text-center">{{ keyword.postsCounter }}</td>
+        </tr>
+
+    {% else %}
+        Aucun mot-clé trouvé.
+    {% endfor %}
+    </tbody>
+    <tfoot>
+    <tr>
+        <th class="checkbox" rel="all"><input type="checkbox" id="" data-check="all"></th>
+        <th scope="col">Nom</th>
+        <th scope="col">Description</th>
+        <th scope="col">Identifiant</th>
+        <th scope="col">Compteur</th>
+    </tr>
+    </tfoot>
+</table>
+

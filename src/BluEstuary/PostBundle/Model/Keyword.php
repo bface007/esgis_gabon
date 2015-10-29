@@ -24,6 +24,11 @@ class Keyword extends BaseTag implements KeywordInterface
     protected $slug;
 
     /**
+     * @var string
+     */
+    protected $desc;
+
+    /**
      * @var integer
      */
     protected $postsCounter;
@@ -87,5 +92,24 @@ class Keyword extends BaseTag implements KeywordInterface
     public function getPostsCounter()
     {
         return $this->postsCounter;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getDesc()
+    {
+        return $this->desc;
+    }
+
+    /**
+     * @param string $desc
+     * @return self
+     */
+    public function setDesc($desc = "")
+    {
+        $this->desc = $desc;
+
+        return $this;
     }
 }

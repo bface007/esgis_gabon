@@ -9,6 +9,7 @@ use ESGISGabon\PostBundle\Entity\CorporatePost;
 use ESGISGabon\PostBundle\Entity\Keyword;
 use ESGISGabon\PostBundle\Form\CategoryType;
 use ESGISGabon\PostBundle\Form\CorporatePostType;
+use ESGISGabon\PostBundle\Form\KeywordType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -131,21 +132,160 @@ class BackendController extends Controller
                     $em->flush();
 
                     $this->get('session')
-                            ->getFlashBag()
-                                ->add('success_info', $i.' catégorie(s) supprimée(s).');
+                        ->getFlashBag()
+                        ->add('success_info', $i.' catégorie(s) supprimée(s).');
                 }
                 if($e > 0){
                     $this->get('session')
                         ->getFlashBag()
-                            ->add('error_info', $e.' élément(s) non reconnu(s).');
+                        ->add('error_info', $e.' élément(s) non reconnu(s).');
                 }
             }else{
                 $this->get('session')
                     ->getFlashBag()
-                        ->add('warning_info', 'Aucune catégorie supprimée.');
+                    ->add('warning_info', 'Aucune catégorie supprimée.');
             }
         }
         return $this->redirect($this->generateUrl('esgis_gabon_admin_categories'));
+    }
+
+    public function keywordsAction()
+    {
+        $keyword = new Keyword();
+
+        return $this->AddOrEditKeyword($keyword, "Mots-clés", CRUD::CREATE);
+    }
+
+    public function editKeywordAction(Keyword $keyword)
+    {
+        return $this->AddOrEditKeyword($keyword, "Mots-clés", CRUD::UPDATE);
+    }
+
+    public function loadKeywordsAction()
+    {
+        $keywordManager = $this->get('blu_es_post.tag_manager');
+
+        $keywords = $keywordManager->loadAllTags();
+
+        return $this->render('@ESGISGabonPost/Backend/keywords_table.html.twig', array(
+            'keywords' => $keywords
+        ));
+    }
+
+    public function deleteKeywordAction()
+    {
+        $request = $this->get('request');
+        $em = $this->getDoctrine()->getManager();
+
+        if('POST' == $request->getMethod()){
+            $keywords_id_list = $request->request->get('keywords_id_list');
+            $table_actions = $request->request->get('table_actions')[0];
+
+            $keywords_id_array = empty($keywords_id_list) ? null : explode(',', $keywords_id_list);
+
+            if(!is_null($keywords_id_array)){
+                $i = 0;
+                $e = 0;
+                foreach($keywords_id_array as $keyword_id){
+                    $keyword = $em->getRepository('ESGISGabonPostBundle:Keyword')->find(intval($keyword_id));
+
+                    if($keyword){
+                        $this->doDeleteKeyword($keyword, $em);
+                        $i++;
+                    }else
+                        $e++;
+                }
+                if($i > 0){
+                    $em->flush();
+
+                    $this->get('session')
+                        ->getFlashBag()
+                        ->add('success_info', $i.' mots-clés supprimé(s).');
+                }
+                if($e > 0){
+                    $this->get('session')
+                        ->getFlashBag()
+                        ->add('error_info', $e.' élément(s) non reconnu(s).');
+                }
+            }else {
+                $this->get('session')
+                    ->getFlashBag()
+                    ->add('warning_info', 'Aucun mot-clé supprimé.');
+            }
+        }
+        return $this->redirect($this->generateUrl('esgis_gabon_admin_keywords'));
+    }
+
+
+    /*======= Protected =======*/
+
+    protected function AddOrEditKeyword(Keyword $keyword, $pageTitle, $actionType = CRUD::CREATE)
+    {
+        $form = $this->createForm(new KeywordType(), $keyword);
+
+        $request = $this->get('request');
+
+        if('POST' == $request->getMethod()) {
+
+            $form->handleRequest($request);
+
+            if ($form->isValid()) {
+                $em = $this->getDoctrine()->getManager();
+                $keywordManager = $this->get('blu_es_post.tag_manager');
+
+                // slugify keyword name
+                $keywordManager->tagSlugify($keyword);
+
+                // persis and flush the new or updated category
+                $em->persist($keyword);
+                $em->flush();
+
+                if($request->isXmlHttpRequest()){
+                    return new JsonResponse(array(
+                        'result' => 'success',
+                        'message' => $keywordManager->generateSuccessMessage($keyword, $actionType)
+                    ));
+                }
+
+                $this->get('session')
+                    ->getFlashBag()
+                    ->add('success_info', $keywordManager->generateSuccessMessage($keyword, $actionType));
+
+                if(CRUD::CREATE === $actionType)
+                    $this->redirect($this->generateUrl('esgis_gabon_admin_keywords'));
+            }
+            if($request->isXmlHttpRequest()){
+                return new JsonResponse(array(
+                    'result' => 'error',
+                    'message' => $form->getErrorsAsString()
+                ));
+            }
+
+        }
+        $renderOptions = array(
+            'page_title' => $pageTitle,
+            'form' => $form->createView(),
+            'action_type' => $actionType
+        );
+
+        if($actionType === CRUD::CREATE){
+
+            $renderOptions['action_url'] = $this->generateUrl('esgis_gabon_admin_keywords');
+            $renderOptions['form_title'] = "Ajouter une nouveau mot-clé";
+
+        } else if($actionType === CRUD::UPDATE){
+            $renderOptions['action_url'] = $this->generateUrl('esgis_gabon_admin_edit_keyword', array(
+                'id' => $keyword->getId()
+            ));
+            $renderOptions['form_title'] = "Mettre à jour le mot-clé";
+        }
+
+        return $this->render('@ESGISGabonPost/Backend/keywords.html.twig', $renderOptions);
+    }
+
+    protected function doDeleteKeyword(Keyword $keyword, ObjectManager $manager)
+    {
+        $manager->remove($keyword);
     }
 
     protected function doDeleteCategory(Category $category, ObjectManager $manager){
@@ -182,11 +322,13 @@ class BackendController extends Controller
                 $this->get('session')
                     ->getFlashBag()
                         ->add('success_info', $categoryManager->generateSuccessMessage($category, $actionType));
+
+                $this->redirect($this->generateUrl('esgis_gabon_admin_categories'));
             }
             if($request->isXmlHttpRequest()){
                 return new JsonResponse(array(
                     'result' => 'error',
-                    'message' => $form->getErrors()
+                    'message' => $form->getErrorsAsString()
                 ));
             }
         }
@@ -239,6 +381,11 @@ class BackendController extends Controller
                     ->get('session')
                         ->getFlashBag()
                             ->add('success_info', $postManager->generateSuccessMessage($corporatePost, $actionType));
+
+                if(CRUD::CREATE === $actionType)
+                    $this->redirect($this->generateUrl('esgis_gabon_admin_edit_post', array(
+                        'id' => $corporatePost->getId()
+                    )));
             }
         }
 

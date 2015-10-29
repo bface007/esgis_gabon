@@ -35,6 +35,8 @@ interface KeywordInterface extends CommonInterface
      */
     public function getSlug();
 
+    public function setSlug($slug);
+
     /**
      * Increments keyword posts counter
      *
@@ -48,4 +50,15 @@ interface KeywordInterface extends CommonInterface
      * @return integer
      */
     public function getPostsCounter();
+
+    /**
+     * @return string|null
+     */
+    public function getDesc();
+
+    /**
+     * @param string $desc
+     * @return self
+     */
+    public function setDesc($desc = "");
 }

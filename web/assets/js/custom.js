@@ -18,6 +18,14 @@
  * @todo Support params like "param1[name]=value1" (should return { param1: { name: value1 } })
  * Usage example: console.log($.unserialize("one="+escape("& = ?")+"&two="+escape("value1")+"&two="+escape("value2")+"&three[]="+escape("value1")+"&three[]="+escape("value2")));
  */
+function loadTable($tableWrapper, loadTableUrl){
+    $tableWrapper.load(loadTableUrl);
+}
+function showFormError($wrapper, errorString){
+    var alertBox = $("<div/>").addClass("alert warning").html(errorString);
+    $wrapper.html(alertBox);
+}
+
 ;(function($){
     $.unserialize = function(serializedString){
         var str = decodeURI(serializedString);
@@ -80,7 +88,7 @@
 
             $hiddenInput = $(hiddenInput);
 
-            $(self.el).after($hiddenInput);
+            $(self.el).parent().after($hiddenInput);
 
             console.log(pluginName +" message: ", 'hidden input created');
 
@@ -172,8 +180,6 @@
     var $mainCarousel = $("#main_carousel"),
         $entAllPosts = $("#ent_all_posts_content"),
         $entSpinner = $("#ent_spinner"),
-        $entCatForm = $("#category-form"),
-        $entCatTableWrapper = $("#ent-categories-table-wrapper"),
         $syncs = $("[data-sync]");
 
     if ($entAllPosts.length) {
@@ -296,56 +302,52 @@
         }
     });
 
-    if($entCatForm.length){
-        var $btnSubmit = $entCatForm.find('button#category-submit');
-
-        $btnSubmit.click(function (e) {
-            if($(this).prop('disabled')){
-                e.preventDefault();
-                return false;
-            }
-        });
-        $entCatForm.submit(function (e) {
-
-            $btnSubmit.disable();
-            $loader = $btnSubmit.find('.loader').removeClass('hide');
-            var data = $(this).serialize();
-
-            $.ajax({
-                url: $(this).attr('action'),
-                data: data,
-                accepts: 'json',
-                method: 'POST',
-                success: function (response, status) {
-                    if($entCatForm.attr('rel') === "create")
-                        $entCatForm[0].reset();
-
-                    if(response.result === 'success'){
-                        loadCatTable($entCatTableWrapper);
-                    }
-
-                    $loader.addClass('hide');
-                    $btnSubmit.disable(false);
-
-                    console.log(response.message);
-                },
-                error: function (xhr, status) {
-                    $loader.addClass('hide');
-                    $btnSubmit.disable(false);
-
-                    console.log(xhr);
-                    console.log(status);
-                }
-            });
-
-            e.preventDefault();
-            return false;
-        })
-    }
-
-    function loadCatTable($tableWrapper){
-        $tableWrapper.load(loadCategoriesTableUrl);
-    }
+    //if($entCatForm.length){
+    //    var $btnSubmit = $entCatForm.find('button#category-submit');
+    //
+    //    $btnSubmit.click(function (e) {
+    //        if($(this).prop('disabled')){
+    //            e.preventDefault();
+    //            return false;
+    //        }
+    //    });
+    //    $entCatForm.submit(function (e) {
+    //
+    //        $btnSubmit.disable();
+    //        $loader = $btnSubmit.find('.loader').removeClass('hide');
+    //        var data = $(this).serialize();
+    //
+    //        $.ajax({
+    //            url: $(this).attr('action'),
+    //            data: data,
+    //            accepts: 'json',
+    //            method: 'POST',
+    //            success: function (response, status) {
+    //                if($entCatForm.attr('rel') === "create")
+    //                    $entCatForm[0].reset();
+    //
+    //                if(response.result === 'success'){
+    //                    loadCatTable($entCatTableWrapper);
+    //                }
+    //
+    //                $loader.addClass('hide');
+    //                $btnSubmit.disable(false);
+    //
+    //                console.log(response.message);
+    //            },
+    //            error: function (xhr, status) {
+    //                $loader.addClass('hide');
+    //                $btnSubmit.disable(false);
+    //
+    //                console.log(xhr);
+    //                console.log(status);
+    //            }
+    //        });
+    //
+    //        e.preventDefault();
+    //        return false;
+    //    })
+    //}
 
     function expand(el, actionBtn){
         if(el.hasClass("expanded")){

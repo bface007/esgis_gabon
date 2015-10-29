@@ -8,6 +8,8 @@
 
 namespace BluEstuary\PostBundle\EventListener;
 
+use BluEstuary\PostBundle\Model\CategoryInterface;
+use BluEstuary\PostBundle\Model\KeywordInterface;
 use BluEstuary\PostBundle\Model\PostInterface;
 use BluEstuary\PostBundle\Service\CategoryManager;
 use Doctrine\Common\Proxy\Exception\InvalidArgumentException;
@@ -53,6 +55,7 @@ class PostSubscriber implements EventSubscriber
     {
         $entity = $args->getEntity();
         $em = $args->getEntityManager();
+        $persisted = false;
 
         if($entity instanceof PostInterface){
 
@@ -62,15 +65,30 @@ class PostSubscriber implements EventSubscriber
 
 
             $keywords = $entity->getKeywords();
+            $categories = $entity->getCategories();
+
             if(!$keywords->isEmpty()){
                 foreach($keywords as $keyword){
-                    $keyword->incrementPostsCounter();
+                    if($keyword instanceof KeywordInterface){
+                        $keyword->incrementPostsCounter();
 
-                    $em->persist($keyword);
+                        $em->persist($keyword);
+                        $persisted = true;
+                    }
                 }
-
-                $em->flush();
             }
+            if(!$categories->isEmpty()){
+                foreach($categories as $category){
+                    if($category instanceof CategoryInterface){
+                        $category->incrementPostCounter();
+
+                        $em->persist($category);
+                        $persisted = true;
+                    }
+                }
+            }
+            if($persisted)
+                $em->flush();
         }
     }
 

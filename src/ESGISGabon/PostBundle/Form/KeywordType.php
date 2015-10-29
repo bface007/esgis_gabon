@@ -15,7 +15,10 @@ class KeywordType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('title', 'text')
+            ->add('name', 'text')
+            ->add('desc', 'textarea', array(
+                'required' => false
+            ))
         ;
     }
     
