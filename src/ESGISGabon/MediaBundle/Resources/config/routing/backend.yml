@@ -1,0 +1,5 @@
+esgis_gabon_media_upload_image:
+    path:     /upload_image
+    defaults: { _controller: ESGISGabonMediaBundle:Upload:uploadImage }
+    requirements:
+        _method: POST

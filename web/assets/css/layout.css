@@ -33,6 +33,12 @@
 .form-group {
     margin-bottom: 15px;
 }
+.form-group small {
+    font-size: 87%;
+    line-height: 1;
+    font-style: italic;
+    color: #666666;
+}
 .btn {
     border: none;
     padding: 15px 15px;
@@ -42,12 +48,21 @@
     color: #FFFFFF;
     text-decoration: none;
 }
+.btn:disabled,
+.btn:disabled:hover,
+.btn.bg-blue:disabled,
+.btn.bg-blue:disabled:hover {
+    cursor: default;
+    background-color: #D3D3D3 !important;
+    color: #ffffff ;
+    opacity: 1;
+}
 .btn:hover {
     opacity: 0.8;
     text-decoration: none;
 }
 .btn.bg-blue:hover {
-    background-color: #2872A5 !important;
+    background-color: #2872A5;
 }
 .btn-sm {
     padding: 8px 10px;
@@ -110,6 +125,9 @@ ul.inline-list > li:first-child > a {
     line-height: 1.42857143;
     border-top: 1px solid #ddd;
     vertical-align: top;
+}
+.table .check-column {
+    width: 1em;
 }
 .pagination {
     display: inline-block;

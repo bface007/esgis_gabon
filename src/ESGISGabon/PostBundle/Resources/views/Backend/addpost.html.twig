@@ -10,8 +10,13 @@
 {% endblock %}
 
 {% block page_content_container %}
-    <form action="{{ path('esgis_gabon_admin_add_post') }}" method="post" {{ form_enctype(form) }}>
-        <div class="col-md-9">
+    {% for message in app.session.flashbag.get('success_info') %}
+    <div class="alert success mlr-15 mb-20">
+        <p>{{ message }}</p>
+    </div>
+    {% endfor %}
+    <form action="{{ action_url }}" method="post" {{ form_enctype(form) }}>
+        <div class="col-md-9 mb-20">
             <div id="ent-post">
                 {# Les erreurs générales du formulaire. #}
                 {{ form_errors(form) }}
@@ -22,9 +27,6 @@
                     {{ form_widget(form.postContent, {'attr': {'id': 'wysiwyg', 'class': 'form-control'}}) }}
                 </div>
             </div>
-
-
-
         </div>
         <div class="col-md-3">
             <div class="ent-panel expanded" id="publish-panel">
@@ -47,6 +49,29 @@
                 <footer class="clearfix">
                     <button class="btn btn-sm rounded-2 block" id="publish-button" type="submit">Enregistrer le brouillon</button>
                 </footer>
+            </div>
+            <div class="ent-panel expanded" id="featured-media">
+                <header class="clearfix tiny">
+                    <div class="title tiny-title">
+                        <h3 class="no-margin">Media à la une</h3>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="panel-action-button" data-action="expand" onclick="return false">
+                            <i class="material-icons">expand_more</i>
+                        </a>
+                    </div>
+                </header>
+                <div class="content" id="ent-post-featured-media">
+                    <div class="form-group" id="testic">
+                        {{ form_label(form.cover, 'Media') }}
+                        {{ form_widget(form.cover) }}
+                    </div>
+                    <button class="btn bg-blue btn-sm block" type="button" id="testBtn">Upload</button>
+                    {% if form.cover.vars.download_uri is defined %}
+                    <img class="img-responsive" src="{{ form.cover.vars.download_uri }}" alt="">
+                    {% endif %}
+                    <input type="file" id="testFile" class="hide">
+                </div>
             </div>
             <div class="ent-panel expanded" id="post-type-panel">
                 <header class="clearfix tiny">
@@ -129,4 +154,37 @@
         var basePost = "{{ path('esgis_gabon_admin_all_posts') }}"
     </script>
     {{ parent() }}
+    <script type="text/javascript">
+        $("#testBtn").click(function (e) {
+            $fileInput = $('#testFile');
+            var $testic = $('#testic').find('input');
+            $fileInput.click();
+            
+            $fileInput.on('change', function (e) {
+                var file = this.files[0];
+
+                var data = new FormData();
+                data.append('file', file);
+
+                $.ajax({
+                    type: 'POST',
+                    url: "{{ path('esgis_gabon_media_upload_image') }}",
+                    data: data,
+                    contentType: false,
+                    processData: false,
+                    success: function(response){
+//                        alert('id: '+ response.id +'\n url: '+ response.fileName);
+                        console.log("resp ",response);
+                        console.log("id ", response.id);
+                        $testic.val(response.id);
+                        console.log('testic ', $testic.val())
+                    },
+                    error: function (response) {
+                        alert('error: '+ response);
+                        console.log('error: ', response);
+                    }
+                });
+            });
+        })
+    </script>
 {% endblock %}

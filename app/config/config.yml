@@ -2,6 +2,9 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
 
+parameters:
+    upload_dir:   %kernel.root_dir%/../web/files
+
 framework:
     #esi:             ~
     translator:      { fallbacks: ["%locale%"] }
@@ -118,7 +121,8 @@ knp_gaufrette:
     adapters:
         esgis_ga_adapter:
             local:
-                directory: %kernel.root_dir%/../web/files
+                directory: %upload_dir%
+                create:    true
     filesystems:
         esgis_ga_filesystem:
             adapter: esgis_ga_adapter

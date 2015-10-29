@@ -1,0 +1,149 @@
+{% extends 'ESGISGabonMainBundle::backend_base.html.twig' %}
+
+{% block page_title %}
+  {{ parent() }}
+  {% if action_type == "update" %}
+    <a href="{{ path('esgis_gabon_admin_categories') }}" class="btn btn-x-sm rounded-4 ml-20 bg-golden">Ajouter une catégorie</a>
+  {% endif %}
+{% endblock %}
+
+{% block page_content_toolbar %}
+
+{% endblock %}
+
+{% block page_content_container %}
+    <div id="alert-wrapper">
+    {% for message in app.session.flashbag.get('success_info') %}
+        <div class="alert success mlr-15 mb-20">
+            <p>{{ message }}</p>
+        </div>
+    {% endfor %}
+    {% for message in app.session.flashbag.get('error_info') %}
+        <div class="alert danger mlr-15 mb-20">
+            <p>{{ message }}</p>
+        </div>
+    {% endfor %}
+    {% for message in app.session.flashbag.get('warning_info') %}
+        <div class="alert warning mlr-15 mb-20">
+            <p>{{ message }}</p>
+        </div>
+    {% endfor %}
+    </div>
+    <div class="col-md-4">
+        <h3 class="mb-20">{{ form_title }}</h3>
+
+        <form id="category-form" rel="{{ action_type }}" action="{{ action_url }}" method="post" {{ form_enctype(form) }}>
+            <div class="form-group mb-30">
+                {{ form_label(form.name, 'Nom') }}
+                {{ form_widget(form.name, {'attr': {'class': 'form-control','onclick': 'this.focus()'}}) }}
+                <small>Ce nom sera utilisé un peu partout sur le site. Il est conseillé de mettre la première lettre en capital.</small>
+
+            </div>
+            <div class="form-group mb-30">
+                {{ form_label(form.parent, 'Parent') }}
+
+                {% set default_value = form.parent.vars.value %}
+                {% set full_name = form.parent.vars.full_name %}
+                {% set id = form.parent.vars.id %}
+                {% set empty_value = form.parent.vars.empty_value %}
+                {% set prefix = '&mdash;' %}
+
+                {% if form.parent is defined %}
+                    <select class="form-control" name="{{ full_name }}" id="{{ id }}">
+
+                        <option value {% if default_value == '' %} selected="selected" {% endif %}>
+                            {{ empty_value }}
+                        </option>
+                    {% for parent in form.parent.vars.choices %}
+                        <option value="{{ parent.value }}" {% if parent.value == default_value %} selected="selected" {% endif %}>
+                            {{ prefix|repeat(parent.data.lvl)|raw }} {{ parent.label }}
+                        </option>
+                    {% endfor %}
+
+                    </select>
+                {% endif %}
+                {% do form.parent.setRendered %}
+                <small>
+                    Les catégories, contrairement aux mots-clés, peuvent avoir une hiérarchie.
+                    Vous pouvez avoir une catégorie nommée Sport, et à l’intérieur, plusieurs catégories comme Football et Basketball.
+                    Ceci est totalement facultatif.</small>
+            </div>
+            <div class="form-group">
+                {{ form_label(form.desc, 'Description') }}
+                {{ form_widget(form.desc, {'attr': {'class': 'form-control'}}) }}
+                <small>La description ne sera pas très utilisée, mais pourra être utile dans l'avenir. Ceci est totalement facultatif.</small>
+            </div>
+            <hr>
+            <div class="form-group mt-20">
+                <button class="btn btn-sm bg-blue" type="submit" id="category-submit">
+                    {{ form_title }}
+                    <span class="loader squares hide"></span>
+                </button>
+            </div>
+
+            {{ form_rest(form) }}
+        </form>
+    </div>
+    <div class="col-md-8">
+        <form action="{{ path('esgis_gabon_admin_delete_categories') }}" method="post" id="ent-category-table">
+            <div class="table-actions clearfix">
+                <div class="pull-left">
+                    <select name="table_actions[] input-sync" class="form-control-inline table-action" data-sync="select" data-sync-value="table_actions">
+                        <option value="" selected="selected">Actions groupées</option>
+                        <option value="delete">Supprimer</option>
+                    </select>
+                    <button class="btn btn-sm" type="submit">Appliquer</button>
+                </div>
+            </div>
+            <div id="ent-categories-table-wrapper" class="ent-panel expanded no-padding no-margin-bottom">
+                {{ render(controller("ESGISGabonPostBundle:Backend:loadCategories")) }}
+            </div>
+            <div class="table-actions clearfix">
+                <div class="pull-left">
+                    <select name="table_actions[] input-sync" class="form-control-inline" data-sync="select" data-sync-value="table_actions">
+                        <option value="" selected="selected">Actions groupées</option>
+                        <option value="delete">Supprimer</option>
+                    </select>
+                    <button class="btn btn-sm" type="submit">Appliquer</button>
+                </div>
+            </div>
+        </form>
+
+        <div id="ent-categories-notice" class="notice">
+            <p>
+                <strong>À savoir: </strong>supprimer une catégorie ne supprime pas les articles qu'elle contient.
+                Les articles affectés uniquement à la catégorie supprimée seront affectés à celle par défaut :
+                <strong>Non classé (cette catégorie ne peut être supprimée)</strong>.
+            </p>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript">
+        var loadCategoriesTableUrl = "{{ path('esgis_gabon_admin_load_categories') }}";
+        var hiddenInputName = 'category_id_list';
+    </script>
+    {{ parent() }}
+    <script type="text/javascript">
+        $('#ent-categories-table').dataTable({
+            hiddenInputName: hiddenInputName,
+            hiddenInputCallback: function ($hiddenInput) {
+                var $entCatTableActionForm = $("#ent-category-table");
+
+                if($entCatTableActionForm.length){
+
+                    $entCatTableActionForm.submit(function (e) {
+                        if('' == $hiddenInput.val() || '' == $(this).find('.table-action').val()){
+                            alert("Vous n'avez sélectionné aucune action ou coché aucune catégorie.");
+
+                            e.preventDefault();
+                            return false;
+                        }
+                    })
+                }
+            }
+        });
+
+    </script>
+{% endblock %}

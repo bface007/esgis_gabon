@@ -8,3 +8,9 @@ services:
             - @blu_es_core.string_helper
         tags:
             - { name: doctrine.event_listener, event: prePersist}
+
+    blu_es_post.type.corporate_post:
+        class:    ESGISGabon\PostBundle\Form\CorporatePostType
+        arguments: ["@doctrine.orm.entity_manager"]
+        tags:
+            - { name: form.type, alias: esgisgabon_postbundle_corporatepost}

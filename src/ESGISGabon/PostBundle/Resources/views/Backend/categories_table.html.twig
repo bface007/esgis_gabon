@@ -1,0 +1,42 @@
+
+<table class="table" id="ent-categories-table">
+    <thead>
+        <tr>
+            <th class="checkbox check-column" rel="all" ><input type="checkbox" id="" data-check="all"></th>
+            <th scope="col">Nom</th>
+            <th scope="col">Description</th>
+            <th scope="col">Identifiant</th>
+            <th scope="col">Compteur</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% set prefix = '&mdash;' %}
+    {% for category in categories %}
+
+        <tr id="category_{{ category.id }}" class="level_{{ category.root }}_{{ category.lft }}">
+            <td class="checkbox">
+                {% if category.slug != 'non-classe' %}
+                <input type="checkbox" id="checkbox_category_{{ category.id }}" data-check="single" data-check-value="{{ category.id }}">
+                {% endif %}
+            </td>
+            <td><a href="{{ path('esgis_gabon_admin_edit_category', {'id': category.id}) }}">{{ prefix|repeat(category.lvl)|raw }} {{ category.name }}</a></td>
+            <td>{{ category.desc }}</td>
+            <td>{{ category.slug }}</td>
+            <td class="text-center">{{ category.postCounter }}</td>
+        </tr>
+
+    {% else %}
+        Il n'a pas de catégorie pour l'instant
+    {% endfor %}
+    </tbody>
+    <tfoot>
+        <tr>
+            <th class="checkbox" rel="all"><input type="checkbox" id="" data-check="all"></th>
+            <th scope="col">Nom</th>
+            <th scope="col">Description</th>
+            <th scope="col">Identifiant</th>
+            <th scope="col">Compteur</th>
+        </tr>
+    </tfoot>
+</table>
+

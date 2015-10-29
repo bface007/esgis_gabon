@@ -23,3 +23,23 @@ esgis_gabon_admin_remove_post:
     defaults:    { _controller: ESGISGabonPostBundle:Backend:removePost }
     requirements:
         id:      \d+
+
+esgis_gabon_admin_categories:
+    path:        /categories
+    defaults:    { _controller: ESGISGabonPostBundle:Backend:categories }
+
+esgis_gabon_admin_edit_category:
+    path:        /categories/edit/{id}
+    defaults:    { _controller: ESGISGabonPostBundle:Backend:editCategory }
+    requirements:
+        id:      \d+
+
+esgis_gabon_admin_load_categories:
+    path:        /categories/load
+    defaults:    { _controller: ESGISGabonPostBundle:Backend:loadCategories }
+    requirements:
+        _method: GET
+
+esgis_gabon_admin_delete_categories:
+    path:        /categories/delete
+    defaults:    { _controller: ESGISGabonPostBundle:Backend:deleteCategory }

@@ -8,9 +8,11 @@
 
 namespace ESGISGabon\MainBundle\Menu;
 
+use Doctrine\Common\Proxy\Exception\InvalidArgumentException;
 use Knp\Menu\FactoryInterface;
 use Symfony\Component\DependencyInjection\ContainerAware;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\Finder\Exception\AccessDeniedException;
 
 class Builder extends ContainerAware
 {
@@ -93,6 +95,8 @@ class Builder extends ContainerAware
         $menu = $factory->createItem('root');
         $menu->setChildrenAttribute('class', 'unstyled');
 
+        $request = $this->container->get('request');
+
         $menu->addChild('Tableau de bord', array( 'route' => 'esgis_gabon_admin_homepage' ))
             ->setAttribute('materialicons', 'dashboard');
 
@@ -104,6 +108,17 @@ class Builder extends ContainerAware
             $menu['Articles']->setChildrenAttribute('class', 'sub-menu unstyled');
             $menu['Articles']->addChild('Tous les articles', array('route' => 'esgis_gabon_admin_all_posts'));
             $menu['Articles']->addChild('Ajouter', array('route' => 'esgis_gabon_admin_add_post'));
+            $menu['Articles']->addChild('Catégories', array('route' => 'esgis_gabon_admin_categories'));
+
+            switch($request->get('_route'))
+            {
+                case 'esgis_gabon_admin_edit_post':
+                    $menu['Articles']['Tous les articles']->setCurrent(true);
+                    break;
+                case 'esgis_gabon_admin_edit_category':
+                    $menu['Articles']['Catégories']->setCurrent(true);
+                    break;
+            }
         }
 
 

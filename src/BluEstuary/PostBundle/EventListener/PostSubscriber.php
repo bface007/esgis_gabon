@@ -10,6 +10,7 @@ namespace BluEstuary\PostBundle\EventListener;
 
 use BluEstuary\PostBundle\Model\PostInterface;
 use BluEstuary\PostBundle\Service\CategoryManager;
+use Doctrine\Common\Proxy\Exception\InvalidArgumentException;
 use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\Events;
 use Doctrine\ORM\Event\OnFlushEventArgs;
@@ -43,7 +44,8 @@ class PostSubscriber implements EventSubscriber
     {
         return array(
             //Events::onFlush,
-            Events::prePersist
+            Events::prePersist,
+            Events::preUpdate
         );
     }
 
@@ -52,13 +54,10 @@ class PostSubscriber implements EventSubscriber
         $entity = $args->getEntity();
         $em = $args->getEntityManager();
 
-
         if($entity instanceof PostInterface){
 
             if($entity->getCategories()->isEmpty()){
                 $entity->addCategory($this->getCategoryManager()->loadOrCreateCategory("Non classé"));
-            }else{
-                throw new \RuntimeException("contains");
             }
 
 
@@ -73,5 +72,13 @@ class PostSubscriber implements EventSubscriber
                 $em->flush();
             }
         }
+    }
+
+    public function preUpdate(LifecycleEventArgs $args)
+    {
+        $entity = $args->getEntity();
+        $em = $args->getEntityManager();
+
+
     }
 }

@@ -61,8 +61,8 @@ class CorporatePost extends Post implements Taggable
     protected $contentChanged;
 
     /**
-     * @var \ESGISGabon\MediaBundle\Entity\Image
-     * @ORM\ManyToOne(targetEntity="ESGISGabon\MediaBundle\Entity\Image", cascade={"persist"})
+     * @var \ESGISGabon\MediaBundle\Entity\Media
+     * @ORM\ManyToOne(targetEntity="ESGISGabon\MediaBundle\Entity\Media", cascade={"persist"})
      * @ORM\JoinColumn(nullable=true)
      */
     protected $cover;

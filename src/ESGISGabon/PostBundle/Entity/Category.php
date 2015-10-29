@@ -43,6 +43,18 @@ class Category extends Base
     protected $slug;
 
     /**
+     * @var string
+     * @ORM\Column(length=255, name="category_desc", nullable=true, type="string")
+     */
+    protected $desc;
+
+    /**
+     * @var int
+     * @ORM\Column(name="category_post_counter", type="integer")
+     */
+    protected $postCounter = 0;
+
+    /**
      * @Gedmo\TreeParent
      * @ORM\ManyToOne(targetEntity="Category", inversedBy="children")
      * @ORM\JoinColumn(name="parent_id", referencedColumnName="id", onDelete="CASCADE")
@@ -87,5 +99,30 @@ class Category extends Base
     public function getId()
     {
         return $this->id;
+    }
+
+    public function getLft()
+    {
+        return $this->lft;
+    }
+
+    public function getLvl()
+    {
+        return $this->lvl;
+    }
+
+    public function getParent()
+    {
+        return $this->parent;
+    }
+
+    public function getChildren()
+    {
+        return $this->children;
+    }
+
+    public function getRoot()
+    {
+        return $this->root;
     }
 }

@@ -59,7 +59,7 @@ class TagsTransformer implements DataTransformerInterface
     public function reverseTransform($tags)
     {
         if(is_null($tags) || empty($tags) || $tags == '')
-            return;
+            return null;
 
         return $this->tagManager->loadOrCreateTags(
             $this->tagManager->splitTagNames($tags)

@@ -2,13 +2,26 @@
 
 namespace ESGISGabon\PostBundle\Form;
 
+use BluEstuary\CoreBundle\Form\DataTransformer\EntityToIdTransformer;
+use BluEstuary\MediaBundle\Form\EmbeddedFileType;
+use Doctrine\Common\Persistence\ObjectManager;
 use ESGISGabon\MediaBundle\Form\ImageType;
+use ESGISGabon\PostBundle\Form\DataTransformer\MediaToId;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Vich\UploaderBundle\Handler\UploadHandler;
+use Vich\UploaderBundle\Storage\StorageInterface;
 
 class CorporatePostType extends AbstractType
 {
+    protected $objectManager;
+
+    public function __construct(ObjectManager $manager)
+    {
+        $this->objectManager = $manager;
+    }
+
     /**
      * @param FormBuilderInterface $builder
      * @param array $options
@@ -40,12 +53,20 @@ class CorporatePostType extends AbstractType
                 'multiple' => true,
                 'expanded' => true
             ))
-            ->add('cover', new ImageType())
+            ->add('cover', 'blu_es_file_type', array(
+                'class' => 'ESGISGabonMediaBundle:Media',
+                'field_name' => 'cover'
+            ))
+//                ->add('cover', 'hidden')
             ->add('keywords', 'tags', array(
                 'by_reference' => false,
                 'required' => false
             ))
         ;
+
+//        $builder
+//            ->get('cover')
+//                ->addModelTransformer(new EntityToIdTransformer($this->objectManager, 'ESGISGabonMediaBundle:Media'));
     }
     
     /**

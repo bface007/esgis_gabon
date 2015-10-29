@@ -2,189 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12f141f8-3a41-44f8-852d-98a954bd1dc9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/img/112.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/img/11980066934_0df2439628_b-1080x450.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/img/227722_222516587774142_4561698_a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/img/8724861154_5b946b9447_b-90x90.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/img/8748862640_01cd0eb9b8_b-90x90.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/img/9738528130_ee487daca0_b-90x90.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/libs/owlcarousel/AjaxLoader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/materialicons/MaterialIcons-Regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/materialicons/MaterialIcons-Regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/materialicons/MaterialIcons-Regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/materialicons/MaterialIcons-Regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/android-chrome-144x144.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/android-chrome-192x192.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/android-chrome-36x36.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/android-chrome-48x48.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/android-chrome-72x72.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/android-chrome-96x96.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/apple-touch-icon-114x114.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/apple-touch-icon-120x120.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/apple-touch-icon-144x144.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/apple-touch-icon-152x152.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/apple-touch-icon-180x180.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/apple-touch-icon-57x57.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/apple-touch-icon-60x60.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/apple-touch-icon-72x72.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/apple-touch-icon-76x76.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/apple-touch-icon-precomposed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/apple-touch-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/img/esgis_new_logo_golden.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/favicon-16x16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/favicon-194x194.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/favicon-32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/favicon-96x96.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/libs/owlcarousel/grabbing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/img/carousel/img_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/img/carousel/img_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/img/carousel/img_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/img/carousel/img_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/mstile-144x144.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/mstile-150x150.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/mstile-310x150.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/mstile-310x310.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/mstile-70x70.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/img/new_logo_esgis.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-bold-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-bold-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-bold-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-bold-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-bolditalic-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-bolditalic-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-bolditalic-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-bolditalic-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-extrabold-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-extrabold-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-extrabold-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-extrabold-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-extrabolditalic-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-extrabolditalic-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-extrabolditalic-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-extrabolditalic-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-light-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-light-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-light-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-light-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-regular-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-regular-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-regular-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-regular-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/MainBundle/Controller/BackendController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Controller/BackendController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/MainBundle/Menu/Builder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/DataFixtures/ORM/Categories.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/Category.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/Category.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/CategoryInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Service/CategoryManager.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/CategoryRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/CategoryType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/CorporatePostRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/CorporatePostType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Naming/DirectoryNamer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Form/ImageType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/CoreBundle/Doctrine/MySQL/IsNull.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/Keyword.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/Keyword.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/KeywordInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/KeywordRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/KeywordTagging.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/KeywordType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/MediaBundle/EventListener/MediaSubscriber.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Listener/PersistPost.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Controller/PostRestController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/EventListener/PostSubscriber.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/PostType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/PostType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/PostTypeType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/DataFixtures/ORM/PostTypes.php.tmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/DataFixtures/ORM/Posts.php.tmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/UserBundle/Controller/SecurityController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Service/TagManager.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Form/Type/TagType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Form/DataTransformer/TagsTransformer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/views/Backend/addpost.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/views/Backend/allposts.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/MainBundle/Resources/config/routing/backend.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/config/routing/backend.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/MainBundle/Resources/views/backend_base.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/libs/tagsinput/bootstrap-tagsinput.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/libs/bootstrap-tagsinput.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/browserconfig.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/ent.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Resources/views/Form/field.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/MainBundle/Resources/views/Includes/footer.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/config/routing/frontend.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/UserBundle/Resources/config/routing/frontend.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/helpers.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/MainBundle/Resources/views/Backend/home.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/libs/jquery.slimscroll.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/MainBundle/Resources/views/Menu/knp_menu.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/layout.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/UserBundle/Resources/views/layout.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/UserBundle/Resources/views/Security/login.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/materialicons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-bold-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-bolditalic-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-extrabold-demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-extrabold-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-extrabolditalic-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-light-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/opensans-regular-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/libs/owlcarousel/owl.carousel.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/libs/owl.carousel.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/libs/owlcarousel/owl.theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/libs/owlcarousel/owl.transitions.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/config/routing/rest.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/routing_rest.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/site.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/support.detector.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/config/routing.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ESGISGabon/UserBundle/Resources/config/routing.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ESGISGabon/UserBundle/Resources/views/Default/index.html.twig" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ESGISGabon/MainBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/ESGISGabon/MainBundle/Resources/config/routing/frontend.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/web/assets/fonts/FontAwesome.otf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/web/assets/fonts/fontawesome-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/web/assets/fonts/fontawesome-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/web/assets/fonts/fontawesome-webfont.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/web/assets/fonts/fontawesome-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ESGISGabon/UserBundle/Entity/Avatar.php" afterPath="$PROJECT_DIR$/src/ESGISGabon/UserBundle/Entity/Avatar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BluEstuary/PostBundle/DependencyInjection/BluEstuaryPostExtension.php" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/DependencyInjection/BluEstuaryPostExtension.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/loader_squares.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/ico/loader_squares_grey_white.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Model/BluEsFileModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Form/BluEsFileType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/CoreBundle/Model/CRUD.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Form/EmbeddedFileType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/CoreBundle/Form/EntityHiddenType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/CoreBundle/Form/DataTransformer/EntityToIdTransformer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Form/DataTransformer/FileTransformer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Form/FileType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Form/HiddenFileType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/DataTransformer/MediaToId.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/MediaType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Service/PostManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/PostStatus.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/CoreBundle/Twig/Extension/Repeat.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BluEstuary/MediaBundle/EventListener/UploadedFileListener.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/views/Backend/categories.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/views/Backend/categories_table.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/libs/lodash.min.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/files/2015/10/56253a2ad15c9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/files/2015/10/56254b479ea8c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/files/2015/10/56254e2a78d8b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/files/2015/10/562551da74dae.jpeg" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Controller/UploadController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Resources/config/routing/backend.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Controller/BackendController.php" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Controller/BackendController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ESGISGabon/MainBundle/Menu/Builder.php" afterPath="$PROJECT_DIR$/src/ESGISGabon/MainBundle/Menu/Builder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/Category.php" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/Category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/Category.php" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/Category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/CategoryInterface.php" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/CategoryInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Service/CategoryManager.php" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Service/CategoryManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/CategoryRepository.php" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/CategoryRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/CategoryType.php" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/CategoryType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Entity/CommonMedia.php" afterPath="$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Entity/CommonMedia.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BluEstuary/PostBundle/DependencyInjection/Configuration.php" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/DependencyInjection/Configuration.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/CorporatePost.php" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/CorporatePost.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ESGISGabon/UserBundle/ESGISGabonUserBundle.php" afterPath="$PROJECT_DIR$/src/ESGISGabon/UserBundle/ESGISGabonUserBundle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Entity/Image.php" afterPath="$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Entity/Image.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Model/Media.php" afterPath="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Model/Media.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Entity/Media.php" afterPath="$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Entity/Media.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/CorporatePostType.php" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/CorporatePostType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Model/MediaInterface.php" afterPath="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Model/MediaInterface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BluEstuary/UserBundle/Model/OwnableInterface.php" afterPath="$PROJECT_DIR$/src/BluEstuary/UserBundle/Model/OwnableInterface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/Post.php" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/Post.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/Post.php" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/Post.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/PostInterface.php" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/PostInterface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BluEstuary/CoreBundle/Helpers/StringHelper.php" afterPath="$PROJECT_DIR$/src/BluEstuary/CoreBundle/Helpers/StringHelper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BluEstuary/UserBundle/Model/User.php" afterPath="$PROJECT_DIR$/src/BluEstuary/UserBundle/Model/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ESGISGabon/UserBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/ESGISGabon/UserBundle/Entity/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BluEstuary/MediaBundle/EventListener/MediaSubscriber.php" afterPath="$PROJECT_DIR$/src/BluEstuary/MediaBundle/EventListener/MediaSubscriber.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BluEstuary/PostBundle/EventListener/PostSubscriber.php" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/EventListener/PostSubscriber.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Form/DataTransformer/TagsTransformer.php" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Form/DataTransformer/TagsTransformer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/views/Backend/addpost.html.twig" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/views/Backend/addpost.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/config/routing/backend.yml" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/config/routing/backend.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ESGISGabon/MainBundle/Resources/views/backend_base.html.twig" afterPath="$PROJECT_DIR$/src/ESGISGabon/MainBundle/Resources/views/backend_base.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/font-awesome.css" afterPath="$PROJECT_DIR$/web/assets/css/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/web/assets/css/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/web/assets/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/custom.js" afterPath="$PROJECT_DIR$/web/assets/js/custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/ent.css" afterPath="$PROJECT_DIR$/web/assets/css/ent.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/helpers.css" afterPath="$PROJECT_DIR$/web/assets/css/helpers.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/layout.css" afterPath="$PROJECT_DIR$/web/assets/css/layout.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BluEstuary/CoreBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/BluEstuary/CoreBundle/Resources/config/services.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Resources/config/services.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/BluEstuary/PostBundle/Resources/config/services.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/config/services.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/site.css" afterPath="$PROJECT_DIR$/web/assets/css/site.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="esgis_gabon.iws" />
@@ -201,120 +74,117 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="FLATTEN" value="false" />
+    <option name="GROUP_BY_TYPE" value="true" />
+    <option name="SORT_CHILDREN" value="false" />
+    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="esgis_gabon" />
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="BackendController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Controller/BackendController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="154" column="23" selection-start-line="154" selection-start-column="23" selection-end-line="154" selection-end-column="23" />
+              <folding>
+                <element signature="e#52#89#0#PHP" expanded="true" />
+                <element signature="e#2486#2633#0#PHP" expanded="false" />
+                <element signature="e#2754#2859#0#PHP" expanded="false" />
+                <element signature="e#2865#3014#0#PHP" expanded="false" />
+                <element signature="e#3172#3507#0#PHP" expanded="false" />
+                <element signature="e#3513#5172#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="backend.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/config/routing/backend.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="44" column="77" selection-start-line="44" selection-start-column="77" selection-end-line="44" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/CategoryType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+              <folding>
+                <element signature="e#46#98#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Category.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/Category.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="87" column="7" selection-start-line="87" selection-start-column="7" selection-end-line="87" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="categories.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/views/Backend/categories.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.29017857">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addpost.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/views/Backend/addpost.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="93" column="47" selection-start-line="93" selection-start-column="47" selection-end-line="93" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assets/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="278" column="48" selection-start-line="278" selection-start-column="48" selection-end-line="278" selection-end-column="48" />
-              <folding />
+              <caret line="71" column="64" selection-start-line="71" selection-start-column="64" selection-end-line="71" selection-end-column="64" />
+              <folding>
+                <element signature="e#2278#2672#0" expanded="false" />
+                <element signature="e#6058#7820#0" expanded="false" />
+                <element signature="e#7852#8416#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.375">
-              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <file leaf-file-name="helpers.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/assets/css/helpers.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="415" column="7" selection-start-line="415" selection-start-column="7" selection-end-line="415" selection-end-column="7" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4295302">
-              <caret line="140" column="21" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TagsTransformer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BluEstuary/PostBundle/Form/DataTransformer/TagsTransformer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0">
-              <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommonMedia.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Entity/CommonMedia.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="29.25">
-              <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-              <folding>
-                <element signature="e#131#163#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Media.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Entity/Media.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.25">
-              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-              <folding>
-                <element signature="e#131#163#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="allposts.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/views/Backend/allposts.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.875">
-              <caret line="110" column="14" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
-              <folding>
-                <element signature="e#12#56#0#Twig" expanded="false" />
-                <element signature="e#126#152#0#Twig" expanded="false" />
-                <element signature="e#5131#5158#0#Twig" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Post.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/Post.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.125">
-              <caret line="297" column="42" selection-start-line="297" selection-start-column="42" selection-end-line="297" selection-end-column="42" />
-              <folding>
-                <element signature="e#130#181#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PostInterface.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/PostInterface.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.625">
-              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-              <folding>
-                <element signature="e#130#178#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -342,57 +212,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/Form/Type/TagType.php" />
-        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/Service/TagManager.php" />
-        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/DataFixtures/ORM/Categories.php" />
-        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/DependencyInjection/BluEstuaryPostExtension.php" />
-        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/DependencyInjection/Configuration.php" />
-        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/Category.php" />
-        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/Category.php" />
-        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/CategoryInterface.php" />
-        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/Service/CategoryManager.php" />
-        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/Resources/config/services.yml" />
-        <option value="$PROJECT_DIR$/app/config/security.yml" />
-        <option value="$PROJECT_DIR$/src/ESGISGabon/UserBundle/ESGISGabonUserBundle.php" />
-        <option value="$PROJECT_DIR$/src/ESGISGabon/MainBundle/Resources/config/routing/frontend.yml" />
-        <option value="$PROJECT_DIR$/src/ESGISGabon/UserBundle/Resources/config/routing/frontend.yml" />
-        <option value="$PROJECT_DIR$/src/ESGISGabon/UserBundle/Controller/SecurityController.php" />
-        <option value="$PROJECT_DIR$/src/ESGISGabon/UserBundle/Resources/views/layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/ESGISGabon/UserBundle/Resources/views/Security/login.html.twig" />
-        <option value="$PROJECT_DIR$/src/ESGISGabon/MainBundle/Menu/Builder.php" />
-        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/CategoryType.php" />
-        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/KeywordTagging.php" />
-        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/CorporatePostRepository.php" />
-        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/Keyword.php" />
-        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/Post.php" />
-        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/Form/DataTransformer/TagsTransformer.php" />
-        <option value="$PROJECT_DIR$/web/assets/css/ent.css" />
-        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/config/routing/backend.yml" />
-        <option value="$PROJECT_DIR$/web/assets/css/helpers.css" />
-        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Controller/PostRestController.php" />
-        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Controller/BackendController.php" />
+        <option value="$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Resources/config/routing/backend.yml" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Form/FileType.php" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/CoreBundle/Form/EntityHiddenTyp.php" />
         <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/views/Backend/allposts.html.twig" />
-        <option value="$PROJECT_DIR$/web/assets/css/layout.css" />
-        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/EventListener/PostSubscriber.php" />
-        <option value="$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Entity/Media.php" />
-        <option value="$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Form/ImageType.php" />
-        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/CorporatePostType.php" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Form/HiddenFileType.php" />
         <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/CorporatePost.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Naming/DirectoryNamer.php" />
         <option value="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Resources/config/services.yml" />
-        <option value="$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Entity/Image.php" />
         <option value="$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Entity/CommonMedia.php" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Model/BluEsFileModel.php" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Form/EmbeddedFileType.php" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Form/DataTransformer/FileTransformer.php" />
         <option value="$PROJECT_DIR$/src/BluEstuary/MediaBundle/EventListener/MediaSubscriber.php" />
-        <option value="$PROJECT_DIR$/src/BluEstuary/UserBundle/Model/OwnableInterface.php" />
-        <option value="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Model/Media.php" />
-        <option value="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Model/MediaInterface.php" />
-        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/PostInterface.php" />
-        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/Post.php" />
-        <option value="$PROJECT_DIR$/web/assets/js/custom.js" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Controller/UploadController.php" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/CoreBundle/Form/EntityHiddenType.php" />
+        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/DataTransformer/MediaToId.php" />
+        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/Media.php" />
+        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/CoreBundle/Form/DataTransformer/EntityToIdTransformer.php" />
+        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/CorporatePostType.php" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/MediaBundle/Form/BluEsFileType.php" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/Form/DataTransformer/TagsTransformer.php" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/EventListener/PostSubscriber.php" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/PostCRUD.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/PostTypes.php" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/PostStatus.php" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/Resources/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/Service/PostManager.php" />
+        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/views/Backend/addpost.html.twig" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/CategoryCRUD.php" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/CoreBundle/Model/CRUD.php" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/CategoryInterface.php" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/Category.php" />
+        <option value="$PROJECT_DIR$/src/ESGISGabon/MainBundle/Menu/Builder.php" />
+        <option value="$PROJECT_DIR$/web/assets/css/layout.css" />
+        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/CategoryType.php" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/PostBundle/Service/CategoryManager.php" />
+        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/Category.php" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/CoreBundle/Twig/Extension/Repeat.php" />
+        <option value="$PROJECT_DIR$/src/BluEstuary/CoreBundle/Resources/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/CategoryRepository.php" />
+        <option value="$PROJECT_DIR$/src/ESGISGabon/MainBundle/Resources/views/backend_base.html.twig" />
+        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/views/Backend/categories_table.html.twig" />
+        <option value="$PROJECT_DIR$/web/assets/css/site.css" />
+        <option value="$PROJECT_DIR$/web/assets/css/helpers.css" />
+        <option value="$PROJECT_DIR$/web/assets/css/ent.css" />
+        <option value="$PROJECT_DIR$/web/assets/js/custom.js" />
+        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/config/routing/backend.yml" />
+        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Controller/BackendController.php" />
+        <option value="$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/views/Backend/categories.html.twig" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -457,6 +327,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -475,380 +347,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="files" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="10" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESGISGabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESGISGabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PostBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESGISGabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PostBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESGISGabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PostBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESGISGabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MediaBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESGISGabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MediaBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BluEstuary" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BluEstuary" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PostBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BluEstuary" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PostBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BluEstuary" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PostBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataTransformer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esgis_gabon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -866,13 +366,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/assets/css/libs/tagsinput" />
       <recent name="$PROJECT_DIR$/web/assets/js/libs" />
       <recent name="$PROJECT_DIR$/web/assets/ico" />
+      <recent name="$PROJECT_DIR$/web/assets/css/libs/tagsinput" />
       <recent name="$PROJECT_DIR$/web/assets" />
       <recent name="$PROJECT_DIR$/web/assets/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Resources/config/routing" />
       <recent name="$PROJECT_DIR$/src/ESGISGabon/MainBundle/Resources/config/routing" />
       <recent name="$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Entity" />
       <recent name="$PROJECT_DIR$/src/ESGISGabon/UserBundle" />
@@ -920,32 +421,44 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32142857" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32142857" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.336858" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33610272" sideWeight="0.4942857" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.336858" sideWeight="0.5057143" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32714286" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32808024" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32714286" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.php" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -960,85 +473,141 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/SecurityController.php">
+    <entry file="file://$PROJECT_DIR$/vendor/vich/uploader-bundle/Storage/StorageInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73758864">
-          <caret line="88" column="109" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="109" />
+        <state vertical-scroll-proportion="0.34567901">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/Keyword.php">
+    <entry file="file://$PROJECT_DIR$/vendor/vich/uploader-bundle/Storage/GaufretteStorage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3333334">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        <state vertical-scroll-proportion="24.375">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/CorporatePostRepository.php">
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/PropertyAccess/PropertyAccessor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.75">
-          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.34567901">
+          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/ArrayCollection.php">
+    <entry file="file://$PROJECT_DIR$/vendor/vich/uploader-bundle/Mapping/PropertyMapping.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.6973996">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.41512346">
+          <caret line="109" column="33" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Listener/PersistPost.php">
+    <entry file="file://$PROJECT_DIR$/vendor/vich/uploader-bundle/Handler/UploadHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.73919755">
+          <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/config/services.yml">
+    <entry file="file://$PROJECT_DIR$/src/BluEstuary/MediaBundle/Form/BluEsFileType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="103" column="30" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BluEstuary/PostBundle/Form/DataTransformer/TagsTransformer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BluEstuary/PostBundle/EventListener/PostSubscriber.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-39.5">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/vich/uploader-bundle/Event/Events.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/Keyword.php">
+    <entry file="file://$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/PostType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="29" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/Post.php">
+    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/DataFixtures/ORM/PostTypes.php.tmp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BluEstuary/PostBundle/Form/Type/TagType.php">
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.12946428">
+          <caret line="115" column="61" selection-start-line="115" selection-start-column="61" selection-end-line="115" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/css/ent.css">
+    <entry file="file://$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/PostStatus.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="412" column="14" selection-start-line="412" selection-start-column="14" selection-end-line="412" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.1388889">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/config/routing/backend.yml">
+    <entry file="file://$PROJECT_DIR$/src/BluEstuary/PostBundle/Resources/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BluEstuary/PostBundle/Service/PostManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="53" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/CorporatePostType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1296296">
+          <caret line="77" column="39" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BluEstuary/CoreBundle/Model/CRUD.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/CategoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7685185">
+          <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/MainBundle/Menu/Builder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.75">
+          <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1046,30 +615,211 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Resources/config/routing/backend.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/views/Backend/allposts.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="25.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="2626" column="1" selection-start-line="2626" selection-start-column="1" selection-end-line="2626" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/css/layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6235119">
+          <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/ico/loader_squares_grey_white.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/RepositoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.333333">
+          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/RepositoryUtils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-39.333332">
+          <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity/Repository/AbstractTreeRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.23302469">
+          <caret line="135" column="45" selection-start-line="135" selection-start-column="45" selection-end-line="135" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BluEstuary/CoreBundle/Twig/Extension/Repeat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BluEstuary/CoreBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="87" column="7" selection-start-line="87" selection-start-column="7" selection-end-line="87" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Doctrine/Form/ChoiceList/EntityChoiceList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Doctrine/Form/Type/EntityType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18518518">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BluEstuary/PostBundle/Service/CategoryManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.708333">
+          <caret line="52" column="48" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/CategoryRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2777778">
+          <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/CategoryType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+          <folding>
+            <element signature="e#46#98#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/views/Backend/addpost.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="93" column="47" selection-start-line="93" selection-start-column="47" selection-end-line="93" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/js/libs/lodash.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/MainBundle/Resources/views/backend_base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8055556">
+          <caret line="103" column="55" selection-start-line="103" selection-start-column="55" selection-end-line="103" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/views/Backend/categories_table.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/css/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="180" column="16" selection-start-line="180" selection-start-column="16" selection-end-line="180" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/css/ent.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4672619">
+          <caret line="562" column="19" selection-start-line="562" selection-start-column="19" selection-end-line="562" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BluEstuary/PostBundle/Service/TagManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/css/helpers.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="371" column="1" selection-start-line="371" selection-start-column="1" selection-end-line="371" selection-end-column="1" />
+          <caret line="415" column="7" selection-start-line="415" selection-start-column="7" selection-end-line="415" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Controller/PostRestController.php">
+    <entry file="file://$PROJECT_DIR$/web/assets/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-          <folding />
+          <caret line="71" column="64" selection-start-line="71" selection-start-column="64" selection-end-line="71" selection-end-column="64" />
+          <folding>
+            <element signature="e#2278#2672#0" expanded="false" />
+            <element signature="e#6058#7820#0" expanded="false" />
+            <element signature="e#7852#8416#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/css/layout.css">
+    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/config/routing/backend.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="89" column="19" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
+          <caret line="44" column="77" selection-start-line="44" selection-start-column="77" selection-end-line="44" selection-end-column="77" />
           <folding />
         </state>
       </provider>
@@ -1077,310 +827,30 @@
     <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Controller/BackendController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="29" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/DirectoryNamerInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7446808">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/vich/uploader-bundle/Mapping/PropertyMapping.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49408984">
-          <caret line="235" column="49" selection-start-line="235" selection-start-column="49" selection-end-line="235" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/date_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24586289">
-          <caret line="296" column="6" selection-start-line="296" selection-start-column="6" selection-end-line="296" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/views/Backend/addpost.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="61.875">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/views/Form/fields.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.28368795">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Form/ImageType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.375">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <caret line="154" column="23" selection-start-line="154" selection-start-column="23" selection-end-line="154" selection-end-column="23" />
           <folding>
-            <element signature="e#131#171#0#PHP" expanded="false" />
+            <element signature="e#52#89#0#PHP" expanded="true" />
+            <element signature="e#2486#2633#0#PHP" expanded="false" />
+            <element signature="e#2754#2859#0#PHP" expanded="false" />
+            <element signature="e#2865#3014#0#PHP" expanded="false" />
+            <element signature="e#3172#3507#0#PHP" expanded="false" />
+            <element signature="e#3513#5172#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/CategoryType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14184397">
-          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Form/CorporatePostType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125">
-          <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
-          <folding>
-            <element signature="e#46#88#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Entity/CorporatePost.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="64" column="91" selection-start-line="64" selection-start-column="91" selection-end-line="64" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/MetadataReader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="41.125">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.75">
-          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BluEstuary/MediaBundle/Naming/DirectoryNamer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BluEstuary/PostBundle/EventListener/PostSubscriber.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6761229">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BluEstuary/PostBundle/Resources/config/services.yml">
+    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/views/Backend/categories.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BluEstuary/MediaBundle/Model/ImageInterface.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14184397">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BluEstuary/MediaBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="68" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BluEstuary/MediaBundle/EventListener/MediaSubscriber.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.125">
-          <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
-          <folding>
-            <element signature="e#139#187#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35224587">
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BluEstuary/UserBundle/Model/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35224587">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Entity/Image.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding>
-            <element signature="e#131#179#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Entity/CommonMedia.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="29.25">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-          <folding>
-            <element signature="e#131#163#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BluEstuary/MediaBundle/Model/MediaInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5744681">
-          <caret line="174" column="42" selection-start-line="174" selection-start-column="42" selection-end-line="174" selection-end-column="42" />
-          <folding>
-            <element signature="e#129#177#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BluEstuary/UserBundle/Model/OwnableInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39007092">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding>
-            <element signature="e#130#178#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BluEstuary/MediaBundle/Model/Media.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29078013">
-          <caret line="343" column="19" selection-start-line="343" selection-start-column="19" selection-end-line="343" selection-end-column="19" />
-          <folding>
-            <element signature="e#131#168#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/MediaBundle/Entity/Media.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.25">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding>
-            <element signature="e#131#163#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/PostInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-          <folding>
-            <element signature="e#130#178#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BluEstuary/PostBundle/Model/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125">
-          <caret line="297" column="42" selection-start-line="297" selection-start-column="42" selection-end-line="297" selection-end-column="42" />
-          <folding>
-            <element signature="e#130#181#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ESGISGabon/PostBundle/Resources/views/Backend/allposts.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.875">
-          <caret line="110" column="14" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
-          <folding>
-            <element signature="e#12#56#0#Twig" expanded="false" />
-            <element signature="e#126#152#0#Twig" expanded="false" />
-            <element signature="e#5131#5158#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/files/2015/10/56253a2ad15c9.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="278" column="48" selection-start-line="278" selection-start-column="48" selection-end-line="278" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.375">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/liip/imagine-bundle/Liip/ImagineBundle/Resources/config/routing.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BluEstuary/PostBundle/Form/DataTransformer/TagsTransformer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4295302">
-          <caret line="140" column="21" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.29017857">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
           <folding />
         </state>
       </provider>

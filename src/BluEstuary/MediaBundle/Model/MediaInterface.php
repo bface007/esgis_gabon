@@ -158,13 +158,13 @@ interface MediaInterface extends CommonInterface, OwnableInterface
     public function getFileUrl();
 
     /**
-     * @param File|null $file
+     * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile|null $file
      * @return self
      */
     public function setFile(File $file = null);
 
     /**
-     * @return File|null
+     * @return File|\Symfony\Component\HttpFoundation\File\UploadedFile|null
      */
     public function getFile();
 

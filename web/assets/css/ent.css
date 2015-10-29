@@ -173,10 +173,11 @@
 .esgis_ga_ent_sidebar {
     background-color: #FFFFFF;
     min-height: 500px;
-    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
 }
 .esgis_ga_ent_sidebar > ul.unstyled {
-    margin-top: 15px;
+    margin-top: 0;
 }
 .esgis_ga_ent_sidebar > ul.unstyled > li > a {
     color: #333333;
@@ -273,9 +274,11 @@ ul.sub-menu > li > a:hover {
 .dashboard-stat,
 .ent-panel {
     background-color: #FFFFFF;
-    border-radius: 4px;
+    /*border-radius: 4px;*/
     margin-bottom: 20px;
     transition: all 200ms linear;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
 }
 .dashboard-stat {
     padding: 15px 12px;
@@ -555,6 +558,9 @@ ul.sub-menu > li.active > a {
 .post-status {
     color: #333333;
     font-weight: bold;
+}
+.table-actions {
+    padding: 10px 0;
 }
 @media (max-width: 768px){
     .columnCount .panels-section {

@@ -41,4 +41,32 @@ interface CategoryInterface extends CommonInterface
      * @return CategoryInterface|null $parent
      */
     public function getParent();
+
+    /**
+     * @param string $desc
+     * @return self
+     */
+    public function setDesc($desc = "");
+
+    /**
+     * @return string
+     */
+    public function getDesc();
+
+    /**
+     * @param int $counter
+     * @return self
+     */
+    public function setPostCounter($counter = 0);
+
+    /**
+     * @return self
+     */
+    public function incrementPostCounter();
+
+    /**
+     * @return int
+     */
+    public function getPostCounter();
+
 }

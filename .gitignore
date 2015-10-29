@@ -9,3 +9,8 @@
 /composer.phar
 /vendor/
 /web/bundles/
+/web/files
+/web/.DS_Store
+/web/assets/.DS_Store
+/web/assets/css/.DS_Store
+/web/assets/fonts/.DS_Store

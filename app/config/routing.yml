@@ -10,6 +10,10 @@ esgis_gabon_admin_posts:
     resource: "@ESGISGabonPostBundle/Resources/config/routing/backend.yml"
     prefix:   /dashboard/posts
 
+esgis_gabon_media:
+    resource: "@ESGISGabonMediaBundle/Resources/config/routing/backend.yml"
+    prefix:   /dashboard/media
+
 esgis_gabon_user_security:
     resource: "@ESGISGabonUserBundle/Resources/config/routing/frontend.yml"
 

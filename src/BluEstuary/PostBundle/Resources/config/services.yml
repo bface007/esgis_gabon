@@ -1,6 +1,7 @@
 parameters:
     blu_es_post.tag_manager.class:      BluEstuary\PostBundle\Service\TagManager
     blu_es_post.category_manager.class: BluEstuary\PostBundle\Service\CategoryManager
+    blu_es_post.post_manager.class:     BluEstuary\PostBundle\Service\PostManager
 
 services:
 
@@ -11,6 +12,10 @@ services:
     blu_es_post.category_manager:
         class:      %blu_es_post.category_manager.class%
         arguments:  ["@doctrine.orm.entity_manager", %blu_es.post.entity.category.class%]
+
+    blu_es_post.post_manager:
+        class:      %blu_es_post.post_manager.class%
+        arguments:  ["@doctrine.orm.entity_manager"]
 
     blu_es_post.form.tags:
         class:      BluEstuary\PostBundle\Form\Type\TagType

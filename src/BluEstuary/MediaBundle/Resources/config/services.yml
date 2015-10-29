@@ -10,3 +10,21 @@ services:
         arguments: ["@service_container"]
         tags:
             - { name: doctrine.event_subscriber, connection: default}
+
+    blu_es_media.media.listener:
+        class:     BluEstuary\MediaBundle\EventListener\UploadedFileListener
+        arguments: ["@service_container"]
+        tags:
+            - { name: kernel.event_listener, event: vich_uploader.post_upload, method: onPostUpload}
+
+    blu_es_media.type.hidden_file:
+        class:     BluEstuary\MediaBundle\Form\HiddenFileType
+        arguments: ["@vich_uploader.storage", "@vich_uploader.upload_handler"]
+        tags:
+            - { name: form.type, alias: hidden_file}
+
+    blu_es_media.type.file_type:
+        class:     BluEstuary\MediaBundle\Form\BluEsFileType
+        arguments: ["@vich_uploader.storage", "@vich_uploader.upload_handler", "@doctrine.orm.entity_manager"]
+        tags:
+            - { name: form.type, alias: blu_es_file_type}

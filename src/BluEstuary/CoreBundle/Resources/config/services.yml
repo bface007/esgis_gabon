@@ -2,3 +2,13 @@ services:
     blu_es_core.string_helper:
         class: BluEstuary\CoreBundle\Helpers\StringHelper
 #        arguments: [@service_id, "plain_value", %parameter%]
+    blu_es_core.type.entity_hidden:
+        class: BluEstuary\CoreBundle\Form\EntityHiddenType
+        arguments: ["@doctrine.orm.entity_manager"]
+        tags:
+            - { name: form.type, alias: entity_hidden}
+    blu_es_core.twig.repeat_extension:
+        class: BluEstuary\CoreBundle\Twig\Extension\Repeat
+        public: false
+        tags:
+            - { name: twig.extension}

@@ -38,14 +38,143 @@
         return obj;
     };
 })(jQuery);
-;(function ($) {
+(function ($) {
+    $.fn.extend({
+        disable: function(state){
+            state = state != undefined ? state : true;
+            return this.each(function () {
+                this.disabled = state;
+            })
+        }
+    });
+})(jQuery);
+(function ($, w, d) {
+    var pluginName = "bluDataTable";
+
+    var defaults = {
+        hiddenInputName: pluginName +"_hidden_input",
+        hiddenInputCallback: function () {}
+    };
+
+
+    var DataTable = function (el, options) {
+        this.el = el;
+        this.options = options;
+        this.$hiddenInput = null;
+
+        var self = this;
+
+        init();
+
+        function init(){
+            self.$hiddenInput = createHiddenInput();
+            initCheckListener();
+            self.options.hiddenInputCallback(self.$hiddenInput);
+        }
+
+        function createHiddenInput (){
+            var hiddenInput = d.createElement('input');
+
+            hiddenInput.setAttribute("type", "hidden");
+            hiddenInput.setAttribute("name", options.hiddenInputName);
+
+            $hiddenInput = $(hiddenInput);
+
+            $(self.el).after($hiddenInput);
+
+            console.log(pluginName +" message: ", 'hidden input created');
+
+            return $hiddenInput;
+        }
+
+        function initCheckListener(){
+            var $checks = $(self.el).find('[data-check]');
+
+
+            $checks.each(function (e) {
+                $(this).on('change', onChange);
+            });
+
+            console.log(pluginName +" message: ", "CheckListener initialized.");
+
+            function onChange(e){
+                console.log('changed');
+                var $check = $(this),
+                    type = $check.attr('data-check');
+
+                if("all" == type){
+                    self.$hiddenInput.val('');
+                    $checks.each(function () {
+                        var value = $(this).attr('data-check-value');
+
+                        if($check.is(':checked')){
+                            $(this).prop('checked', true);
+                            if(value){
+                                value = value.trim();
+                                var hiddenInputVal = self.$hiddenInput.val() === '' ? value : self.$hiddenInput.val() +","+ value;
+                                self.$hiddenInput.val(hiddenInputVal);
+                            }
+                        }else{
+                            $(this).prop('checked', false);
+                            self.$hiddenInput.val('');
+                        }
+                    });
+                }else if("single" == type){
+                    var value = $check.attr('data-check-value').trim(),
+                        hiddenInputValArray = self.$hiddenInput.val().trim() !== '' ? self.$hiddenInput.val().trim().split(',') : [];
+
+                    if($check.is(':checked') && w._.indexOf(hiddenInputValArray, value) == -1)
+                        hiddenInputValArray.push(value);
+                    else if(!$check.is(':checked') && w._.indexOf(hiddenInputValArray, value) != -1)
+                        w._.pull(hiddenInputValArray, value);
+
+                    self.$hiddenInput.val(hiddenInputValArray.toString());
+                }
+            }
+        }
+    };
+
+    function Plugin(element, options){
+        this.element = element;
+        this.options = $.extend( {}, defaults, options);
+        this.dataTable = null;
+
+        this.init();
+    }
+
+    Plugin.prototype = {
+
+        init: function () {
+            t0 = w.performance.now();
+            console.log(pluginName +" message: ", "init");
+            this.dataTable = new DataTable(this.element, this.options);
+            t1 = w.performance.now();
+            console.log(pluginName +" message: ", "initialized -- "+ (Math.ceil(t1 - t0) / 1000) +" seconds elapsed.");
+        }
+
+    };
+
+    $.fn.extend({
+        dataTable: function (options) {
+            return this.each(function () {
+                if(!$.data(this, "plugin_"+ pluginName)) {
+                    $.data(this, "plugin_"+ pluginName, new Plugin(this, options));
+                }
+            })
+        }
+    });
+})(jQuery, window, document);
+(function ($) {
     $("#esgis_ga_global_search").blur(function (e) {
         var $el = $(this);
         $el.val() === "" ? $el.removeClass("active") : $el.addClass("active");
     });
     var $mainCarousel = $("#main_carousel"),
         $entAllPosts = $("#ent_all_posts_content"),
-        $entSpinner = $("#ent_spinner");
+        $entSpinner = $("#ent_spinner"),
+        $entCatForm = $("#category-form"),
+        $entCatTableWrapper = $("#ent-categories-table-wrapper"),
+        $syncs = $("[data-sync]");
 
     if ($entAllPosts.length) {
 
@@ -119,6 +248,25 @@
         });
     }
 
+    if($syncs.length){
+        $syncs.each(function () {
+            $(this).on('change', syncOnChange)
+        });
+
+        function syncOnChange(e){
+
+            switch ($(this).attr('data-sync')) {
+                case "select":
+                    var value = $(this).val(),
+                        id = $(this).attr('data-sync-value');
+
+                    $('[data-sync-value="'+ id +'"]').each(function () {
+                        $(this).find('option[value="'+ value +'"]').prop('selected', true);
+                    });
+                    break;
+            }
+        }
+    }
 
     $('.scrollable').slimScroll({
             height: 'auto',
@@ -148,6 +296,56 @@
         }
     });
 
+    if($entCatForm.length){
+        var $btnSubmit = $entCatForm.find('button#category-submit');
+
+        $btnSubmit.click(function (e) {
+            if($(this).prop('disabled')){
+                e.preventDefault();
+                return false;
+            }
+        });
+        $entCatForm.submit(function (e) {
+
+            $btnSubmit.disable();
+            $loader = $btnSubmit.find('.loader').removeClass('hide');
+            var data = $(this).serialize();
+
+            $.ajax({
+                url: $(this).attr('action'),
+                data: data,
+                accepts: 'json',
+                method: 'POST',
+                success: function (response, status) {
+                    if($entCatForm.attr('rel') === "create")
+                        $entCatForm[0].reset();
+
+                    if(response.result === 'success'){
+                        loadCatTable($entCatTableWrapper);
+                    }
+
+                    $loader.addClass('hide');
+                    $btnSubmit.disable(false);
+
+                    console.log(response.message);
+                },
+                error: function (xhr, status) {
+                    $loader.addClass('hide');
+                    $btnSubmit.disable(false);
+
+                    console.log(xhr);
+                    console.log(status);
+                }
+            });
+
+            e.preventDefault();
+            return false;
+        })
+    }
+
+    function loadCatTable($tableWrapper){
+        $tableWrapper.load(loadCategoriesTableUrl);
+    }
 
     function expand(el, actionBtn){
         if(el.hasClass("expanded")){
